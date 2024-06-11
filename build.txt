@@ -1,8 +1,5 @@
 displayName = Toasty's QoL Mod
 author = Toasty
-version = 2.2.1
-hideCode = true
-hideResources = true
+version = 2.2.11
 sortAfter = EfficientNohits
-buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*
 homepage = https://github.com/toasty599/ToastyQoL
