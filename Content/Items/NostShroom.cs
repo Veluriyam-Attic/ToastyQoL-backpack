@@ -31,7 +31,7 @@ namespace ToastyQoL.Content.Items
 
             TooltipLine obj3 = new(Mod, "2", "People who have nohit SCal with this:")
             {
-                Text = "Joey",
+                Text = "Astra",
                 OverrideColor = new(244, 127, 255)
             };
             tooltips.Add(obj3);
