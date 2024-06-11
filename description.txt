@@ -1,16 +1,23 @@
-An addon mod for ToastyQoL that adds Calamity features to the mod.
+A QoL mod with a focus on more cheaty features.
 
 UI:
 
-- Adds several Calamity specific toggles.
-- Adds an Automatic Progression System to allow automatic use of permanent power up items upon reaching their tier (Such as the Blood Orange).
-- Adds MNLs for Revengeance, Death, Infernum and an option to use Calamity Tester Killtimes instead.
+- Adds a UI wheel openable through a keybind or clicking the cheat indicator icon next to the map.
+- Click any of the icons to toggle its effect/open up a menu that contains further toggles.
+- Examples of these toggles include: Powers (such as godmode), Light Hack, Enemy Spawns, Changing time,
+  a system that sends a chat message informing you if you were under Minimum Nohit Length for a boss fight,
+  and by how much.
+- You can also toggle the death state of any boss.
+- There is a potion UI menu that allows you to give yourself any potion buff.
+- Adds an Summoner Minion Slot UI icon left of the HP bar that gives you information about your current summon slots.
 
 Items:
 
-- Adds Shiny Wand, an item that lets you spawn a simulation of Calamitas' bullet hells to practice.
-- Adds Reflective Wand, an item that lets you spawn a simulation of every SCal bullet hell to practice.
-- Adds more boss spawners for Calamity bosses.
-- Adds "Potion of Rage", a potion that gives you max rage for 2 seconds if no boss is alive.
+- Adds boss spawners that allows you to spawn up to 10 at once.
+- Adds Nostalgic Shroom: The OG Shroom, nothing more. Has a list of victors in its tooltip.
+- Adds Double Shroom: doubles the effect of Nostalgic Shroom.
+- Both of these are sold by the Merchant.
+- Adds a Toaster Pet that occasionally burns toast.
+- Adds "The Percenter", an item that drains 10% max hp from the nearest enemy. Useful for getting bosses to a certain phase.
 
 Maintained by Midnight295, if you have any questions, problems, or complaints please direct them to me @midnight295 on Discord.
