@@ -77,6 +77,27 @@ namespace ToastyQoL.Content.Items
                 OverrideColor = new(242, 221, 255)
             };
             tooltips.Add(obj9);
+
+            TooltipLine obj10 = new(Mod, "7", "People who have nohit SCal with this:")
+            {
+                Text = "Obama",
+                OverrideColor = new(102, 0, 102)
+            };
+            tooltips.Add(obj10);
+
+            TooltipLine obj11 = new(Mod, "7", "People who have nohit SCal with this:")
+            {
+                Text = "PurpleMattik",
+                OverrideColor = new(242, 221, 255)
+            };
+            tooltips.Add(obj11);
+
+            TooltipLine obj12 = new(Mod, "7", "People who have nohit SCal with this:")
+            {
+                Text = "KRR",
+                OverrideColor = new(253, 51, 5)
+            };
+            tooltips.Add(obj12);
         }
 
         public override void SetDefaults()
