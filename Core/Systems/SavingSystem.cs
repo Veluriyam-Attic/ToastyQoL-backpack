@@ -130,6 +130,7 @@ namespace ToastyQoL.Core.Systems
             MapSystem.MapTeleport = tag.GetBool("maptp");
             Toggles.ProperShrooms = tag.GetBool("propershrooms");
             Toggles.ShroomShader = tag.GetBool("shroomsshader");
+            Toggles.GravestonesEnabled = tag.GetBool("graves");
         }
 
         public override void SaveWorldData(TagCompound tag)
@@ -162,6 +163,7 @@ namespace ToastyQoL.Core.Systems
             tag["maptp"] = MapSystem.MapTeleport;
             tag["propershrooms"] = Toggles.ProperShrooms;
             tag["shroomsshader"] = Toggles.ShroomShader;
+            tag["graves"] = Toggles.GravestonesEnabled;
         }
     }
 }
