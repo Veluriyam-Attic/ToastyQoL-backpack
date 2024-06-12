@@ -74,7 +74,7 @@ namespace ToastyQoL.Content.Items
             TooltipLine obj9 = new(Mod, "7", "People who have nohit SCal with this:")
             {
                 Text = "Xurkiderp",
-                OverrideColor = new(242, 221, 255)
+                OverrideColor = new(0, 255, 106)
             };
             tooltips.Add(obj9);
 
