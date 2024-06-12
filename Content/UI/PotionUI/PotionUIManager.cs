@@ -283,12 +283,12 @@ namespace ToastyQoL.Content.UI.PotionUI
 
                 foreach (PotionElement potionElement in keyPair.Value)
                 {
-                    modTag.TryGet(potionElement.PotionName + potionElement.PotionDescription, out TagCompound potionTag);
+                    modTag.TryGet(potionElement.PotionName, out TagCompound potionTag);
                     potionTag ??= new TagCompound();
 
                     potionElement.Save(potionTag);
 
-                    modTag[potionElement.PotionName + potionElement.PotionDescription] = potionTag;
+                    modTag[potionElement.PotionName] = potionTag;
                 }
 
                 playerTag[keyPair.Key.Name] = modTag;
@@ -307,7 +307,7 @@ namespace ToastyQoL.Content.UI.PotionUI
                 {
                     foreach (PotionElement potionElement in keyPair.Value)
                     {
-                        if (modTag.TryGet<TagCompound>(potionElement.PotionName + potionElement.PotionDescription, out var potionTag))
+                        if (modTag.TryGet<TagCompound>(potionElement.PotionName, out var potionTag))
                             potionElement.Load(potionTag);
 
                         if (potionElement.Selected)
