@@ -71,35 +71,35 @@ namespace ToastyQoL.Content.Items
             };
             tooltips.Add(obj8);
 
-            TooltipLine obj9 = new(Mod, "7", "People who have nohit SCal with this:")
+            TooltipLine obj9 = new(Mod, "8", "People who have nohit SCal with this:")
             {
                 Text = "Xurkiderp",
                 OverrideColor = new(0, 255, 106)
             };
             tooltips.Add(obj9);
 
-            TooltipLine obj10 = new(Mod, "7", "People who have nohit SCal with this:")
+            TooltipLine obj10 = new(Mod, "9", "People who have nohit SCal with this:")
             {
                 Text = "Obama",
                 OverrideColor = new(102, 0, 102)
             };
             tooltips.Add(obj10);
 
-            TooltipLine obj11 = new(Mod, "7", "People who have nohit SCal with this:")
+            TooltipLine obj11 = new(Mod, "10", "People who have nohit SCal with this:")
             {
                 Text = "PurpleMattik",
                 OverrideColor = new(242, 221, 255)
             };
             tooltips.Add(obj11);
 
-            TooltipLine obj12 = new(Mod, "7", "People who have nohit SCal with this:")
+            TooltipLine obj12 = new(Mod, "11", "People who have nohit SCal with this:")
             {
                 Text = "KRR",
                 OverrideColor = new(253, 51, 5)
             };
             tooltips.Add(obj12);
 
-            TooltipLine obj13 = new(Mod, "7", "People who have nohit SCal with this:")
+            TooltipLine obj13 = new(Mod, "12", "People who have nohit SCal with this:")
             {
                 Text = "Brutus",
                 OverrideColor = new(153, 204, 255)
