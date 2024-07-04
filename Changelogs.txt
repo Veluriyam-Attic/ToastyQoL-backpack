@@ -1,2 +1,7 @@
-﻿Changelogs:
-- Fixed tMod shitting itself if the mod gets unloaded.
+﻿Toasty QoL: Update 2.2.12
+
+Fixed Potions not saving correctly (Hopefully).
+
+Fixed Tombstone toggle not saving correctly.
+
+Updated Xurikderp's name color in the Nostalgic Shroom description.
