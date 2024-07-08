@@ -1,5 +1,5 @@
-displayName = Toasty's QoL Mod
-author = Toasty
-version = 2.2.13
+displayName = Imogen's QoL Mod
+author = Imogen
+version = 2.2.14
 sortAfter = EfficientNohits
 homepage = https://github.com/toasty599/ToastyQoL

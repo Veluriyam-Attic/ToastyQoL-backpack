@@ -1,7 +1,11 @@
-﻿Toasty QoL: Update 2.2.12
+﻿Imogen QoL: Update 2.2.12
 
 Fixed Potions not saving correctly (Hopefully).
 
 Fixed Tombstone toggle not saving correctly.
 
 Updated Xurikderp's name color in the Nostalgic Shroom description.
+
+Update 2.2.13
+
+Added Brutus to Nostalgic Shroom description

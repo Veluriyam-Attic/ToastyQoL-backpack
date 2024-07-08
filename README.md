@@ -1,4 +1,4 @@
-# ToastyQoL
+# ImogenQoL
 
 ## In-game Description
 
