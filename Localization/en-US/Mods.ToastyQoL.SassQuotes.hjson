@@ -1,13 +1,13 @@
 Lose: {
-	1:  Use your noggin...
-	2:  This is going to be a looooong journey, isn't it?
-	3:  I hope the youtube views are worth it.
-	4:  Cheese belongs on crackers, not nohits.
-	5:  Fallgodding might help.
-	6:  Avoid projectiles, they hurt!
-	7:  It's okay, you can always blame the RNG.
-	8:  You know you need to kill the boss for it to be a nohit, right?
-	9:  You literally died at the end. This isn't a nohit.
+	1: Use your noggin...
+	2: This is going to be a looooong journey, isn't it?
+	3: I hope the youtube views are worth it.
+	4: Cheese belongs on crackers, not nohits.
+	5: Fallgodding might help.
+	6: Avoid projectiles, they hurt!
+	7: It's okay, you can always blame the RNG.
+	8: You know you need to kill the boss for it to be a nohit, right?
+	9: You literally died at the end. This isn't a nohit.
 	11: I think Hello Kitty Online might be more your speed?
 	12: The venn diagram of you and the boss' attacks is a perfect circle.
 	13: Hello? you awake? haven't turned on your brain yet, have you?
@@ -16,7 +16,6 @@ Lose: {
 	16: Skill issue detected. Solution: Touch Grass.
 	17: You're supposed to nohit the boss, not the other way around...
 	18: Were you trying to get hit?
-
 }
 
 Win: {
@@ -28,7 +27,6 @@ Win: {
 	6: When was the last time you went outside?
 	7: Skill issue detected. Solution: Touch Grass.
 	8: Your mother must be so proud of you.
-
 }
 
 Specific: {

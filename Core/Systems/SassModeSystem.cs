@@ -55,14 +55,14 @@ namespace ToastyQoL.Core.Systems
 
             GenericSassQuotesWin = new()
             {
-                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.1"),
-                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.2"),
-                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.3"),
-                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.4"),
-                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.5"),
-                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.6"),
-                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.7"),
-                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.8"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Win.1"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Win.2"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Win.3"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Win.4"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Win.5"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Win.6"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Win.7"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Win.8"),
             };
 
             SassSpecificBossQuotes = new()
