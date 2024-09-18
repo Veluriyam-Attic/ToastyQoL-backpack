@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace ToastyQoL.Core.Systems
@@ -32,48 +33,49 @@ namespace ToastyQoL.Core.Systems
         {
             GenericSassQuotesLose = new()
             {
-                "Use your noggin...",
-                "This is going to be a looooong journey, isn't it?",
-                "I hope the youtube views are worth it.",
-                "Cheese belongs on crackers, not nohits.",
-                "Fallgodding might help.",
-                "Avoid projectiles, they hurt!",
-                "It's okay, you can always blame the RNG.",
-                "You know you need to kill the boss for it to be a nohit, right?",
-                "You literally died at the end. This isn't a nohit.",
-                "I think Hello Kitty Online might be more your speed?",
-                "The venn diagram of you and the boss' attacks is a perfect circle.",
-                "Hello? you awake? haven't turned on your brain yet, have you?",
-                "Unfortunately for you, difficulty is subjective.",
-                "When was the last time you went outside?",
-                "Skill issue detected. Solution: Touch Grass.",
-                "You're supposed to nohit the boss, not the other way around...",
-                "Were you trying to get hit?"
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.1"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.2"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.3"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.4"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.5"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.6"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.7"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.8"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.9"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.10"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.11"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.12"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.13"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.14"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.15"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.16"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.17"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.18")
             };
 
             GenericSassQuotesWin = new()
             {
-                "I hope you know your judge's favorite song.",
-                "You should see a Doctor. Frequent, premature kills can be a sign of a severe skill issue.",
-                "Is okiiiii i guess...",
-                "Come on you can do better than this... Maybe.",
-                "Hey, your ego is showing.",
-                "When was the last time you went outside?",
-                "Skill issue detected. Solution: Touch Grass.",
-                "Your mother must be so proud of you.",
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.1"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.2"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.3"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.4"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.5"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.6"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.7"),
+                Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Lose.8"),
             };
 
             SassSpecificBossQuotes = new()
             {
-                [NPCID.KingSlime] = new() { "Press 'A' and 'D' to move!", "A Guinea Pig did better than you..." },
-                [NPCID.EyeofCthulhu] = new() { "This Boss has better eyesight than you..." },
-                [NPCID.Plantera] = new () { "Well done, you killed a plant." },
-                [NPCID.WallofFlesh] = new() { "Press 'Space' to jump!" },
-                [NPCID.Deerclops] = new() { "Press 'Space' to jump!" },
-                [NPCID.Retinazer] = new() { "This Boss has better eyesight than you..." },
-                [NPCID.Spazmatism] = new() { "This Boss has better eyesight than you..." },
-                [NPCID.QueenBee] = new() { "'Hive' got a plan for you: Give up." },
-                [NPCID.DukeFishron] = new() { "Don't fish for compliments.", "Double tap to dash!" }
+                [NPCID.KingSlime] = new() { Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Specific.KingSlime"), Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Specific.KingSlimeAlt") },
+                [NPCID.EyeofCthulhu] = new() { Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Specific.EyeGeneric") },
+                [NPCID.Plantera] = new () { Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Specific.Plantera") },
+                [NPCID.WallofFlesh] = new() { Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Specific.Spacebar") },
+                [NPCID.Deerclops] = new() { Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Specific.Spacebar") },
+                [NPCID.Retinazer] = new() { Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Specific.EyeGeneric") },
+                [NPCID.Spazmatism] = new() { Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Specific.EyeGeneric") },
+                [NPCID.QueenBee] = new() { Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Specific.QueenBee") },
+                [NPCID.DukeFishron] = new() { Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Specific.Fishron"), Language.GetTextValue($"Mods.ToastyQoL.SassQuotes.Specific.FishronAlt") }
             };
         }
 

@@ -1,0 +1,14 @@
+DoubleTrippy: {
+	DisplayName: Trippier
+	Description: Ok, I think you've taken enough...
+}
+
+NostTrippy: {
+	DisplayName: Trippy
+	Description: So pretty...
+}
+
+ToasterBuff: {
+	DisplayName: Toaster
+	Description: She tries, but often burns it
+}
