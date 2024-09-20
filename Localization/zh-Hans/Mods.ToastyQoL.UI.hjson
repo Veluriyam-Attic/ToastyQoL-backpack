@@ -1,0 +1,25 @@
+Toggles: {
+	Gravestones: {
+		// Name: Toggle Gravestones
+		// Description: Enable Gravestones dropping.
+	}
+
+	LightHack: {
+		// Name: Toggle Light Hack
+		// Description: Set Light Hack to
+		// Disable: Turn Light Hack off
+		// Disable2: Turned Off
+		// SetTo: Set To {0}%
+	}
+
+	Shrooms: {
+		Full: {
+		}
+
+		FullRGB: {
+		}
+	}
+
+	MNL: {
+	}
+}
