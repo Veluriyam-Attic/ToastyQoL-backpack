@@ -1,230 +1,233 @@
 DoubleShroom: {
-	// DisplayName: Double Shrooms
-	/* Tooltip:
+	DisplayName: 双倍蘑菇
+	Tooltip:
 		'''
 		Trippier (Hage)
 		This gets replaced.
-		''' */
+		'''
 }
 
 NostShroom: {
-	// DisplayName: Nostalgic Shrooms
-	/* Tooltip:
+	DisplayName: 怀旧蘑菇
+	Tooltip:
 		'''
-		The original
+		原初之菇
 		This gets replaced.
-		''' */
+		'''
 }
 
 PercentGun: {
-	// DisplayName: The Percenter
-	/* Tooltip:
+	DisplayName: 定比削减者
+	Tooltip:
 		'''
-		Deals 10% of the nearest targets max HP to them
-		This is likely to break more complex fights.
-		''' */
+		为距离最近的目标削减其最大生命值的10%
+		可以用来拆解更复杂的战斗。
+		'''
 }
 
 SacrificialDagger: {
-	// DisplayName: Sacrificial Dagger
-	/* Tooltip:
+	DisplayName: 舍身之匕
+	Tooltip:
 		'''
-		Reduces player health to 10
-		Reduces health to 1 if already at 10 health or less
-		''' */
+		将玩家的生命值降到10
+		如果生命值已低至10及以下，则降到1
+		'''
 }
 
+RightClickToTen: <right>增加召唤数，最多为10
+IntantlySummons: 立即召唤
+
 BetsySpawner: {
-	// DisplayName: Betsy Spawner
-	/* Tooltip:
+	DisplayName: 双足翼龙召唤器
+	Tooltip:
 		'''
-		Instantly summons Betsy.
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.DD2Betsy}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 DestSpawner: {
-	// DisplayName: Destroyer Spawner
-	/* Tooltip:
+	DisplayName: 毁灭者召唤器
+	Tooltip:
 		'''
-		Instantly summons Destroyer
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.TheDestroyer}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 DFSpawner: {
-	// DisplayName: Duke Fishron Spawner
-	/* Tooltip:
+	DisplayName: 猪龙鱼公爵召唤器
+	Tooltip:
 		'''
-		Instantly summons Duke Fishron
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.DukeFishron}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 EoLSpawner: {
-	// DisplayName: Empress Of Light Spawner
-	/* Tooltip:
+	DisplayName: 光之女皇召唤器
+	Tooltip:
 		'''
-		Instantly summons Empress Of Light
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.HallowBoss}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 GolemSpawner: {
-	// DisplayName: Golem Spawner
-	/* Tooltip:
+	DisplayName: 石巨人召唤器
+	Tooltip:
 		'''
-		Instantly summons Golem
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.Golem}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 LCSpawner: {
-	// DisplayName: Lunatic Cultist Spawner
-	/* Tooltip:
+	DisplayName: 拜月教徒召唤器
+	Tooltip:
 		'''
-		Instantly summons Lunatic Cultist
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.CultistBoss}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 MLSpawner: {
-	// DisplayName: Moon Lord Spawner
-	/* Tooltip:
+	DisplayName: 月亮领主召唤器
+	Tooltip:
 		'''
-		Instantly summons Moon Lord
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$Enemies.MoonLord}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 PlantSpawner: {
-	// DisplayName: Plantera Spawner
-	/* Tooltip:
+	DisplayName: 世纪之花召唤器
+	Tooltip:
 		'''
-		Instantly summons Plantera
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.Plantera}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 QSSpawner: {
-	// DisplayName: Queen Slime Spawner
-	/* Tooltip:
+	DisplayName: 史莱姆皇后召唤器
+	Tooltip:
 		'''
-		Instantly summons Queen Slime
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.QueenSlimeBoss}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 SkPrSpawner: {
-	// DisplayName: Skeletron Prime Spawner
-	/* Tooltip:
+	DisplayName: 机械骷髅王召唤器
+	Tooltip:
 		'''
-		Instantly summons Skeletron Prime
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.SkeletronPrime}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 TwinsSpawner: {
-	// DisplayName: Twins Spawner
-	/* Tooltip:
+	DisplayName: 双子魔眼召唤器
+	Tooltip:
 		'''
-		Instantly summons Twins
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$Enemies.TheTwins}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 BoCSpawner: {
-	// DisplayName: Brain Of Cthulhu Spawner
-	/* Tooltip:
+	DisplayName: 克苏鲁之脑召唤器
+	Tooltip:
 		'''
-		Instantly summons Brain Of Cthulhu
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.BrainofCthulhu}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 DCSpawner: {
-	// DisplayName: Deerclops Spawner
-	/* Tooltip:
+	DisplayName: 独眼巨鹿召唤器
+	Tooltip:
 		'''
-		Instantly summons Deerclops
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.Deerclops}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 EOCSpawner: {
-	// DisplayName: Eye Of Cthulhu Spawner
-	/* Tooltip:
+	DisplayName: 克苏鲁之眼召唤器
+	Tooltip:
 		'''
-		Instantly summons Eye Of Cthulhu
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.EyeofCthulhu}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 EoWSpawner: {
-	// DisplayName: Eater Of Worlds Spawner
-	/* Tooltip:
+	DisplayName: 世界吞噬者召唤器
+	Tooltip:
 		'''
-		Instantly summons Eater Of Worlds
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.EaterofWorldsHead}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 KSSpawner: {
-	// DisplayName: King Slime Spawner
-	/* Tooltip:
+	DisplayName: 史莱姆王召唤器
+	Tooltip:
 		'''
-		Instantly summons King Slime
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.KingSlime}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 QBSpawner: {
-	// DisplayName: Queen Bee Spawner
-	/* Tooltip:
+	DisplayName: 蜂后召唤器
+	Tooltip:
 		'''
-		Instantly summons Queen Bee
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.QueenBee}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 SkeletronSpawner: {
-	// DisplayName: Skeletron Spawner
-	/* Tooltip:
+	DisplayName: 骷髅王召唤器
+	Tooltip:
 		'''
-		Instantly summons Skeletron
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons}{$NPCName.SkeletronHead}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 WoFSpawner: {
-	// DisplayName: Wall Of Flesh Spawner
-	/* Tooltip:
+	DisplayName: 血肉墙召唤器
+	Tooltip:
 		'''
-		Instantly summons Wall Of Flesh on your left.
-		Right-click to increase spawn count up to 10
+		在你的左侧{$IntantlySummons}{$NPCName.WallofFlesh}
+		{$RightClickToTen}
 		Spawn Count
-		''' */
+		'''
 }
 
 ToasterItem: {
-	// DisplayName: Toaster
-	// Tooltip: "'Ding'"
+	DisplayName: 吐司炉
+	Tooltip: "“叮！”"
 }

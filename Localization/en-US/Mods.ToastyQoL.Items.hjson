@@ -34,12 +34,15 @@ SacrificialDagger: {
 		'''
 }
 
+RightClickToTen: <right> to increase spawn count up to 10
+IntantlySummons: Instantly summons
+
 BetsySpawner: {
 	DisplayName: Betsy Spawner
 	Tooltip:
 		'''
-		Instantly summons Betsy.
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.DD2Betsy}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -48,8 +51,8 @@ DestSpawner: {
 	DisplayName: Destroyer Spawner
 	Tooltip:
 		'''
-		Instantly summons Destroyer
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.TheDestroyer}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -58,8 +61,8 @@ DFSpawner: {
 	DisplayName: Duke Fishron Spawner
 	Tooltip:
 		'''
-		Instantly summons Duke Fishron
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.DukeFishron}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -68,8 +71,8 @@ EoLSpawner: {
 	DisplayName: Empress Of Light Spawner
 	Tooltip:
 		'''
-		Instantly summons Empress Of Light
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.HallowBoss}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -78,8 +81,8 @@ GolemSpawner: {
 	DisplayName: Golem Spawner
 	Tooltip:
 		'''
-		Instantly summons Golem
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.Golem}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -88,8 +91,8 @@ LCSpawner: {
 	DisplayName: Lunatic Cultist Spawner
 	Tooltip:
 		'''
-		Instantly summons Lunatic Cultist
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.CultistBoss}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -98,8 +101,8 @@ MLSpawner: {
 	DisplayName: Moon Lord Spawner
 	Tooltip:
 		'''
-		Instantly summons Moon Lord
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$Enemies.MoonLord}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -108,8 +111,8 @@ PlantSpawner: {
 	DisplayName: Plantera Spawner
 	Tooltip:
 		'''
-		Instantly summons Plantera
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.Plantera}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -118,8 +121,8 @@ QSSpawner: {
 	DisplayName: Queen Slime Spawner
 	Tooltip:
 		'''
-		Instantly summons Queen Slime
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.QueenSlimeBoss}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -128,8 +131,8 @@ SkPrSpawner: {
 	DisplayName: Skeletron Prime Spawner
 	Tooltip:
 		'''
-		Instantly summons Skeletron Prime
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.SkeletronPrime}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -138,8 +141,8 @@ TwinsSpawner: {
 	DisplayName: Twins Spawner
 	Tooltip:
 		'''
-		Instantly summons Twins
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$Enemies.TheTwins}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -148,8 +151,8 @@ BoCSpawner: {
 	DisplayName: Brain Of Cthulhu Spawner
 	Tooltip:
 		'''
-		Instantly summons Brain Of Cthulhu
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.BrainofCthulhu}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -158,8 +161,8 @@ DCSpawner: {
 	DisplayName: Deerclops Spawner
 	Tooltip:
 		'''
-		Instantly summons Deerclops
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.Deerclops}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -168,8 +171,8 @@ EOCSpawner: {
 	DisplayName: Eye Of Cthulhu Spawner
 	Tooltip:
 		'''
-		Instantly summons Eye Of Cthulhu
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.EyeofCthulhu}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -178,8 +181,8 @@ EoWSpawner: {
 	DisplayName: Eater Of Worlds Spawner
 	Tooltip:
 		'''
-		Instantly summons Eater Of Worlds
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.EaterofWorldsHead}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -188,8 +191,8 @@ KSSpawner: {
 	DisplayName: King Slime Spawner
 	Tooltip:
 		'''
-		Instantly summons King Slime
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.KingSlime}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -198,8 +201,8 @@ QBSpawner: {
 	DisplayName: Queen Bee Spawner
 	Tooltip:
 		'''
-		Instantly summons Queen Bee
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.QueenBee}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -208,8 +211,8 @@ SkeletronSpawner: {
 	DisplayName: Skeletron Spawner
 	Tooltip:
 		'''
-		Instantly summons Skeletron
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.SkeletronHead}
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
@@ -218,8 +221,8 @@ WoFSpawner: {
 	DisplayName: Wall Of Flesh Spawner
 	Tooltip:
 		'''
-		Instantly summons Wall Of Flesh on your left.
-		Right-click to increase spawn count up to 10
+		{$IntantlySummons} {$NPCName.WallofFlesh} on your left.
+		{$RightClickToTen}
 		Spawn Count
 		'''
 }
