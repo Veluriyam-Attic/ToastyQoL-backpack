@@ -1,15 +1,15 @@
 Toggles: {
 	Gravestones: {
-		// Name: Toggle Gravestones
-		// Description: Enable Gravestones dropping.
+		Name: 切换墓碑生成
+		Description: 开启以允许生成墓碑
 	}
 
 	LightHack: {
-		// Name: Toggle Light Hack
-		// Description: Set Light Hack to
-		// Disable: Turn Light Hack off
-		// Disable2: Turned Off
-		// SetTo: Set To {0}%
+		Name: 切换全局光照
+		Description: 将全局光照强度设为
+		Disable: 关闭全局光照
+		Disable2: 已关闭
+		SetTo: 已设为{0}%
 	}
 
 	Shrooms: {

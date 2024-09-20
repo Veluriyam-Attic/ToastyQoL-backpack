@@ -1,14 +1,14 @@
 DoubleTrippy: {
-	// DisplayName: Trippier
-	// Description: Ok, I think you've taken enough...
+	DisplayName: 加倍迷幻
+	Description: 好了，我觉得你已经吃够了……
 }
 
 NostTrippy: {
-	// DisplayName: Trippy
-	// Description: So pretty...
+	DisplayName: 迷幻
+	Description: 太美了……
 }
 
 ToasterBuff: {
-	// DisplayName: Toaster
-	// Description: She tries, but often burns it
+	DisplayName: 吐司炉
+	Description: 她尽力了，但还是会烤糊
 }
