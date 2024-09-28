@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
 using System.Collections.Generic;
 using Terraria;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using ToastyQoL.Content.UI.Pages;
 using ToastyQoL.Core;
@@ -21,95 +22,91 @@ namespace ToastyQoL.Content.UI.UIManagers
             {
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Map", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/MapGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Reveal The Full Map",
-                () => "Fills out all of your map, cannot be reversed",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.RevealMap.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.RevealMap.Description"),
                 1f,
                 () => { MapSystem.MapReveal = true; }),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Spawns", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/SpawnsGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Enemy Spawns",
-                () => "Toggles blocking enemies from spawning",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.EnemySpawns.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.EnemySpawns.Description"),
                 2f,
                 () => { Toggles.NoSpawns = !Toggles.NoSpawns; },
                 typeof(Toggles).GetField("NoSpawns", ToastyQoLUtils.UniversalBindingFlags)),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/time", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/timeGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Time Flow",
-                () => "Toggles the flow of time",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.Time.TimeFlow.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.Time.TimeFlow.Description"),
                 3f,
                 () => { Toggles.FrozenTime = !Toggles.FrozenTime; },
                 typeof(Toggles).GetField("FrozenTime", ToastyQoLUtils.UniversalBindingFlags)),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/time", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/timeGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Day Time",
-                () => "Swaps between night and day",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.Time.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.Time.Description"),
                 4f,
                 () => 
                 {
                      Main.dayTime = !Main.dayTime;
                      Main.time = 0.0;
                      if (Main.dayTime)
-                        TogglesUIManager.QueueMessage("Time set to Day", Color.Gold);
+                        TogglesUIManager.QueueMessage(Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.Time.TimeDay"), Color.Gold);
                      else
-                        TogglesUIManager.QueueMessage("Time set to Night", Color.DimGray);
+                        TogglesUIManager.QueueMessage(Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.Time.TimeNight"), Color.DimGray);
                 }),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/water", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/waterGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Rain",
-                () => "Toggles a rainstorm",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.ToggleRain.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.ToggleRain.Description"),
                 5f,
                 () => { Toggles.ToggleRain = !Toggles.ToggleRain; },
                 typeof(Toggles).GetField("ToggleRain", ToastyQoLUtils.UniversalBindingFlags)),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Event", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/EventGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Disable Events",
-                () => "Cancels/disables any active events",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.DisableEvents.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.DisableEvents.Description"),
                 6f,
                 () => { Toggles.DisableEvents = !Toggles.DisableEvents; }),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/biome", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/biomeGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Biome Fountains",
-                () => "Water fountains now force their biome post Queen Bee",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.BiomeFountains.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.BiomeFountains.Description"),
                 7f,
                 () => { Toggles.BiomeFountainsForceBiome = !Toggles.BiomeFountainsForceBiome; },
                 typeof(Toggles).GetField("BiomeFountainsForceBiome", ToastyQoLUtils.UniversalBindingFlags)),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/difficulty", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/difficultyGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle World Difficulty",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.WorldDifficulty.Name"),
                 () => 
                 {
                     string difficulty = "";
-                    string color = "";
+                
                     switch (Main.GameMode)
                     {
                         case 0:
-                            difficulty = "Expert";
-                            color = "[c/af4bff:";
+                            difficulty = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.WorldDifficulty.Difficulty.Expert.Name");
                             break;
 
                         case 1:
-                            difficulty = "Master";
-                            color = "[c/FF4444:";
+                            difficulty = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.WorldDifficulty.Difficulty.Master.Name");
                             break;
 
                         case 2:
-                            difficulty = "Journey";
-                            color = "[c/ffff66:";
+                            difficulty = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.WorldDifficulty.Difficulty.Journey.Name");
                             break;
 
                         default:
-                            difficulty = "Normal";
-                            color = "[c/ffffff:";
+                            difficulty = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.WorldDifficulty.Difficulty.Normal.Name");
                             break;
                     }
-                    return $"Set the world difficulty to] {color}{difficulty}";
+                    return Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.WorldDifficulty.Difficulty.SetTo", difficulty);
                 },
                 8f,
                 () => 
@@ -121,28 +118,28 @@ namespace ToastyQoL.Content.UI.UIManagers
                         case 0:
                             Main.GameMode = 1;
                             Main.LocalPlayer.difficulty = 0;
-                            text = "Expert enabled";
+                            text = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.WorldDifficulty.Difficulty.Expert.Enable");
                             color = new Color(175, 75, 255);
                             break;
 
                         case 1:
                             Main.GameMode = 2;
                             Main.LocalPlayer.difficulty = 0;
-                            text = "Master enabled";
+                            text = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.WorldDifficulty.Difficulty.Master.Enable");
                             color = new Color(255, 68, 68);
                             break;
 
                         case 2:
                             Main.GameMode = 3;
                             Main.LocalPlayer.difficulty = 3;
-                            text = "Journey enabled";
+                            text = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.WorldDifficulty.Difficulty.Journey.Enable");
                             color = new Color(255, 255, 102);
                             break;
 
                         default:
                             Main.GameMode = 0;
                             Main.LocalPlayer.difficulty = 0;
-                            text = "Normal enabled";
+                            text = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.WorldDifficulty.Difficulty.Normal.Enable");
                             color = Color.White;
                             break;
                     }
@@ -151,27 +148,23 @@ namespace ToastyQoL.Content.UI.UIManagers
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Skull", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/SkullGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Player Difficulty",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.PlayerDifficulty.Name"),
                 () =>
                 {
                     string difficulty;
-                    string color;
                     switch (Main.LocalPlayer.difficulty)
                     {
                         case 0:
-                            difficulty = "Mediumcore";
-                            color = "[c/af4bff:";
+                            difficulty = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.PlayerDifficulty.Difficulty.Mediumcore.Name");
                             break;
                         case 1:
-                            difficulty = "Hardcore";
-                            color = "[c/FF4444:";
+                            difficulty = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.PlayerDifficulty.Difficulty.Hardcore.Name");
                             break;
                         default:
-                            difficulty = "Classic";
-                            color = "[c/ffffff:";
+                            difficulty = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.PlayerDifficulty.Difficulty.Classic.Name");
                             break;
                     }
-                    return $"Set the player difficulty to] {color}{difficulty}";
+                    return Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.PlayerDifficulty.Difficulty.SetTo", difficulty);
                 },
                 9f,
                 () =>
@@ -182,19 +175,19 @@ namespace ToastyQoL.Content.UI.UIManagers
                     {
                         case 0:
                             Main.LocalPlayer.difficulty = 1;
-                            text = "Mediumcore enabled";
+                            text = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.PlayerDifficulty.Difficulty.Mediumcore.Enable");
                             color = new Color(175, 75, 255);
                             break;
 
                         case 1:
                             Main.LocalPlayer.difficulty = 2;
-                            text = "Hardcore Enabled";
+                            text = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.PlayerDifficulty.Difficulty.Hardcore.Enable");
                             color = new Color(255, 68, 68);
                             break;
 
                         default:
                             Main.LocalPlayer.difficulty = 0;
-                            text = "Classic enabled";
+                            text = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.PlayerDifficulty.Difficulty.Classic.Enable");
                             color = Color.White;
                             break;
                     }
@@ -207,14 +200,14 @@ namespace ToastyQoL.Content.UI.UIManagers
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/water", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/waterGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Map Teleporting",
-                () => "Toggles right clicking the fullscreen map to teleport",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.MapTeleporting.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.WorldUI.MapTeleporting.Description"),
                 10f,
                 () => { MapSystem.MapTeleport = !MapSystem.MapTeleport; },
                 typeof(MapSystem).GetField("MapTeleport", ToastyQoLUtils.UniversalBindingFlags)),
             };
-
-            TogglesPage uIManager = new(uIElements, WorldUIName, "World Toggles", ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/worldUIIcon", AssetRequestMode.ImmediateLoad).Value, 7f);
+            ;
+            TogglesPage uIManager = new(uIElements, WorldUIName, "World Toggles" /*Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.WorldUI")*/, ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/worldUIIcon", AssetRequestMode.ImmediateLoad).Value, 7f);
             uIManager.TryRegister();
         }
     }

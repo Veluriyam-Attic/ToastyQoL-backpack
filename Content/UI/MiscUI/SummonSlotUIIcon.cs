@@ -4,6 +4,7 @@ using ReLogic.Content;
 using System.Runtime.CompilerServices;
 using Terraria;
 using Terraria.GameContent;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 
@@ -67,11 +68,11 @@ namespace ToastyQoL.Content.UI.MiscUI
                 // If so, use the Interpolated String Handler to make a string that displays more in depth text.
                 // You do not need to do it this way, you could use a simple string that you manually format, but this is more readable and nicer.
                 DefaultInterpolatedStringHandler defaultInterpolatedStringHandler = new(3, 4);
-                defaultInterpolatedStringHandler.AppendFormatted("Max Minion Slots: " + maxMinions);
+                defaultInterpolatedStringHandler.AppendFormatted(Language.GetTextValue($"Mods.ToastyQoL.UI.SummonUI.Max") + " " + maxMinions);
                 defaultInterpolatedStringHandler.AppendLiteral("\n");
-                defaultInterpolatedStringHandler.AppendFormatted("Free Minion Slots: " + freeMinions);
+                defaultInterpolatedStringHandler.AppendFormatted(Language.GetTextValue($"Mods.ToastyQoL.UI.SummonUI.Free") + " " + freeMinions);
                 defaultInterpolatedStringHandler.AppendLiteral("\n");
-                defaultInterpolatedStringHandler.AppendFormatted("Used Minion Slots: " + amountOfMinions);
+                defaultInterpolatedStringHandler.AppendFormatted(Language.GetTextValue($"Mods.ToastyQoL.UI.SummonUI.Used") + " " + amountOfMinions);
 
                 // Set Main.hoverItemName to our string appear when hovered over.
                 Main.hoverItemName = defaultInterpolatedStringHandler.ToStringAndClear();

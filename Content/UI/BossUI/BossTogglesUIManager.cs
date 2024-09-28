@@ -9,6 +9,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.GameInput;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using ToastyQoL.Core.Systems;
 
@@ -159,7 +160,7 @@ namespace ToastyQoL.Content.UI.BossUI
                 if (mouseHitbox.Intersects(tickGlowRect))
                 {
                     spriteBatch.Draw(tickGlowTexture, spawnPos + tickPos, null, Color.White, 0, tickGlowTexture.Size() * 0.5f, 1f, 0, 0);
-                    Main.hoverItemName = "[c/ffcc44:Mark every boss as alive]";
+                    Main.hoverItemName = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.BossUI.EnableAll");
                     if ((Main.mouseLeft && Main.mouseLeftRelease || Main.mouseRight && Main.mouseRightRelease) && TogglesUIManager.ClickCooldownTimer == 0)
                     {
                         // On click stuff
@@ -181,7 +182,7 @@ namespace ToastyQoL.Content.UI.BossUI
                 if (mouseHitbox.Intersects(crossGlowRect))
                 {
                     spriteBatch.Draw(crossGlowTexture, spawnPos + crossPos, null, Color.White, 0, crossGlowTexture.Size() * 0.5f, 1f, 0, 0);
-                    Main.hoverItemName = "[c/ffcc44:Mark every boss as dead]";
+                    Main.hoverItemName = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.BossUI.DisableAll");
                     if ((Main.mouseLeft && Main.mouseLeftRelease || Main.mouseRight && Main.mouseRightRelease) && TogglesUIManager.ClickCooldownTimer == 0)
                     {
                         MarkAllBossesAsX(true);
@@ -208,7 +209,7 @@ namespace ToastyQoL.Content.UI.BossUI
                 if (mouseHitbox.Intersects(infoGlowHoverRect))
                     spriteBatch.Draw(infoGlowTexture, spawnPos + infoPos, null, Color.White, 0, infoGlowTexture.Size() * 0.5f, 1.2f, 0, 0);
 
-                Main.hoverItemName = "[c/659cff:Hold L-SHIFT to toggle every boss up to the selected boss']\n[c/659cff:progression to the selected boss' state when clicking]";
+                Main.hoverItemName = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.BossUI.Explanation") + "\n" + Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.BossUI.Explanation2");
 
             }
             spriteBatch.Draw(infoTexture, spawnPos + infoPos, null, Color.White, 0, infoTexture.Size() * 0.5f, 1.2f, 0, 0);
@@ -316,8 +317,7 @@ namespace ToastyQoL.Content.UI.BossUI
                         {
                             // Draw it and set the mouse text.
                             spriteBatch.Draw(element.GlowTexture, drawPositionFinal, null, Color.White, 0, element.GlowTexture.Size() * 0.5f, element.Scale, 0, 0);
-                            Main.hoverItemName = $"[c/ffcc44:Toggle {element.Name}'s Death]";
-
+                            Main.hoverItemName = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.BossUI.Toggle", element.Name);
                         }
                         if (ToastyQoLUtils.CanAndHasClickedUIElement)
                         {
@@ -354,7 +354,7 @@ namespace ToastyQoL.Content.UI.BossUI
                     spriteBatch.Draw(element.Texture, drawPositionFinal, null, Color.White, 0, element.Texture.Size() * 0.5f, element.Scale, 0, 0);
 
                     // Draw the indicator.
-                    string status = dead ? "[c/f92a07:Dead]" : "[c/19a028:Alive]";
+                    string status = dead ? Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.BossUI.Dead") : Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.BossUI.Alive");
                     spriteBatch.Draw(tickOrCross, drawPositionFinal + new Vector2(10, 10), null, Color.White, 0, tickOrCross.Size() * 0.5f, 1, 0, 0);
 
                     // If we are hovering over it, and can draw
@@ -362,7 +362,7 @@ namespace ToastyQoL.Content.UI.BossUI
                     {
                         // Draw it and set the mouse text.
                         spriteBatch.Draw(tickOrCrossGlow, drawPositionFinal + new Vector2(10, 10), null, Color.White, 0, tickOrCrossGlow.Size() * 0.5f, 1, 0, 0);
-                        Main.hoverItemName = $"[c/ffcc44:Toggle {element.Name}'s Death]" + "\n" + status;
+                        Main.hoverItemName = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.BossUI.Toggle", element.Name) + "\n" + status;
                     }
                 }
             }

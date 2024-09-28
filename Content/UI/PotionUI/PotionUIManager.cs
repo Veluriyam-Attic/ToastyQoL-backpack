@@ -7,6 +7,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
@@ -75,145 +76,145 @@ namespace ToastyQoL.Content.UI.PotionUI
             PotionMod vanilla = new("Terraria", "ToastyQoL/Content/UI/PotionUI/Textures/terrariaIcon");
             ModsRelatedPotions.Add(vanilla, new List<PotionElement>() 
             {
-                new PotionElement("Ammo Reservation", "20% chance to not consume ammo", "ToastyQoL/Content/UI/PotionUI/Textures/ammoReservation", BuffID.AmmoReservation, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.AmmoRes.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.AmmoRes.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/ammoReservation", BuffID.AmmoReservation, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Archery", "10% increased bow damage and 20% increased arrow speed", "ToastyQoL/Content/UI/PotionUI/Textures/archery", BuffID.Archery, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Archery.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Archery.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/archery", BuffID.Archery, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Battle", "Increases enemy spawn rate", "ToastyQoL/Content/UI/PotionUI/Textures/battle", BuffID.Battle, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Battle.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Battle.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/battle", BuffID.Battle, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Builder", "Increases placement speed and range", "ToastyQoL/Content/UI/PotionUI/Textures/builder", BuffID.Builder, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Builder.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Builder.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/builder", BuffID.Builder, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Calming", "Decreases enemy spawn rate", "ToastyQoL/Content/UI/PotionUI/Textures/calming", BuffID.Calm, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Calming.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Calming.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/calming", BuffID.Calm, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Crate", "Increases chance to get a crate", "ToastyQoL/Content/UI/PotionUI/Textures/crate", BuffID.Crate, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Crate.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Crate.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/crate", BuffID.Crate, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Dangersense", "Allows you to see nearby danger sources", "ToastyQoL/Content/UI/PotionUI/Textures/dangersense", BuffID.Dangersense, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Dangersense.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Dangersense.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/dangersense", BuffID.Dangersense, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Endurance", "Reduces damage taken by 10%", "ToastyQoL/Content/UI/PotionUI/Textures/endurance", BuffID.Endurance, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Endurance.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Endurance.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/endurance", BuffID.Endurance, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Exquisitely Stuffed", "Major improvements to all stats", "ToastyQoL/Content/UI/PotionUI/Textures/goldenDelight", BuffID.WellFed3, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ExquisiteStuff.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ExquisiteStuff.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/goldenDelight", BuffID.WellFed3, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Featherfall", "Slows falling speed", "ToastyQoL/Content/UI/PotionUI/Textures/featherfall", BuffID.Featherfall, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Featherfall.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Featherfall.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/featherfall", BuffID.Featherfall, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Fishing", "Increases fishing power by 15", "ToastyQoL/Content/UI/PotionUI/Textures/fishing", BuffID.Fishing, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Fishing.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Fishing.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/fishing", BuffID.Fishing, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Flask of Cursed Flames", "Weapon Imbue Cursed Flames", "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfCursedFlames", BuffID.WeaponImbueCursedFlames, () => Main.hardMode,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskCursed.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskCursed.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfCursedFlames", BuffID.WeaponImbueCursedFlames, () => Main.hardMode,
                 Weights.PostWallOfFlesh),
 
-                new PotionElement("Flask of Fire", "Weapon Imbue Fire", "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfFire", BuffID.WeaponImbueFire, () => NPC.downedQueenBee,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskFire.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskFire.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfFire", BuffID.WeaponImbueFire, () => NPC.downedQueenBee,
                 Weights.PostQueenBee),
 
-                new PotionElement("Flask of Gold", "Weapon Imbue Gold", "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfGold", BuffID.WeaponImbueGold, () => Main.hardMode,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskGold.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskGold.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfGold", BuffID.WeaponImbueGold, () => Main.hardMode,
                 Weights.PostWallOfFlesh),
 
-                new PotionElement("Flask of Ichor", "Weapon Imbue Ichor", "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfIchor", BuffID.WeaponImbueIchor, () => Main.hardMode,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskIchor.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskIchor.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfIchor", BuffID.WeaponImbueIchor, () => Main.hardMode,
                 Weights.PostWallOfFlesh),
 
-                new PotionElement("Flask of Nanites", "Weapon Imbue Nanites", "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfNanites", BuffID.WeaponImbueNanites, () => NPC.downedPlantBoss,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskNanites.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskNanites.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfNanites", BuffID.WeaponImbueNanites, () => NPC.downedPlantBoss,
                 Weights.PostPlantera),
 
-                new PotionElement("Flask of Party", "Weapon Imbue Party", "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfParty", BuffID.WeaponImbueConfetti, () => NPC.downedQueenBee,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskParty.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskParty.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfParty", BuffID.WeaponImbueConfetti, () => NPC.downedQueenBee,
                 Weights.PostQueenBee),
 
-                new PotionElement("Flask of Poison", "Weapon Imbue Poison", "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfPoison", BuffID.WeaponImbuePoison, () => NPC.downedQueenBee,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskPoison.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskPoison.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfPoison", BuffID.WeaponImbuePoison, () => NPC.downedQueenBee,
                 Weights.PostQueenBee),
 
-                new PotionElement("Flask of Venom", "Weapon Imbue Venom", "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfVenom", BuffID.WeaponImbueVenom, () => NPC.downedPlantBoss,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskVenom.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskVenom.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfVenom", BuffID.WeaponImbueVenom, () => NPC.downedPlantBoss,
                 Weights.PostPlantera),
 
-                new PotionElement("Flipper", "Lets you move swiftly in liquids", "ToastyQoL/Content/UI/PotionUI/Textures/flipper", BuffID.Flipper, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Flipper.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Flipper.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flipper", BuffID.Flipper, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Gills", "Breathe water instead of air", "ToastyQoL/Content/UI/PotionUI/Textures/gills", BuffID.Gills, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Gills.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Gills.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/gills", BuffID.Gills, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Gravitation", "Allows the control of gravity", "ToastyQoL/Content/UI/PotionUI/Textures/gravitation", BuffID.Gravitation, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Gravitation.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Gravitation.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/gravitation", BuffID.Gravitation, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Greater Luck", "Increases the Luck of the user", "ToastyQoL/Content/UI/PotionUI/Textures/greaterLuck", BuffID.Lucky, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.GreatLuck.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.GreatLuck.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/greaterLuck", BuffID.Lucky, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Heartreach", "Increases pickup range for life hearts", "ToastyQoL/Content/UI/PotionUI/Textures/heartreach", BuffID.Heartreach, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Heartreach.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Heartreach.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/heartreach", BuffID.Heartreach, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Hunter", "Shows the location of enemies", "ToastyQoL/Content/UI/PotionUI/Textures/hunter", BuffID.Hunter, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Hunter.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Hunter.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/hunter", BuffID.Hunter, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Inferno", "Ignites nearby enemies", "ToastyQoL/Content/UI/PotionUI/Textures/inferno", BuffID.Inferno, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Inferno.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Inferno.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/inferno", BuffID.Inferno, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Invisibility", "Grants invisibility and lowers the spawn rate of enemies", "ToastyQoL/Content/UI/PotionUI/Textures/invisibility", BuffID.Invisibility, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Invisibility.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Invisibility.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/invisibility", BuffID.Invisibility, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Ironskin", "Increase defense by 8", "ToastyQoL/Content/UI/PotionUI/Textures/ironskin", BuffID.Ironskin, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Ironskin.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Ironskin.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/ironskin", BuffID.Ironskin, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Lifeforce", "Increases max life by 20%", "ToastyQoL/Content/UI/PotionUI/Textures/lifeforce", BuffID.Lifeforce, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Lifeforce.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Lifeforce.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/lifeforce", BuffID.Lifeforce, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Magic Power", "20% increased magic damage", "ToastyQoL/Content/UI/PotionUI/Textures/magicPower", BuffID.MagicPower, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.MagicPower.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.MagicPower.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/magicPower", BuffID.MagicPower, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Mana Regeneration", "Increased mana regeneration", "ToastyQoL/Content/UI/PotionUI/Textures/manaRegeneration", BuffID.ManaRegeneration, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ManaRegen.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ManaRegen.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/manaRegeneration", BuffID.ManaRegeneration, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Mining", "Increases mining speed by 25%", "ToastyQoL/Content/UI/PotionUI/Textures/mining", BuffID.Mining, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Mining.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Mining.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/mining", BuffID.Mining, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Night Owl Potion", "Increases night vision", "ToastyQoL/Content/UI/PotionUI/Textures/nightOwl", BuffID.NightOwl, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.NightOwl.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.NightOwl.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/nightOwl", BuffID.NightOwl, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Obsidian Skin", "Provides immunity to lava", "ToastyQoL/Content/UI/PotionUI/Textures/obsidianSkin", BuffID.ObsidianSkin, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ObsidianSkin.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ObsidianSkin.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/obsidianSkin", BuffID.ObsidianSkin, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Rage", "Increases critical chance by 10%", "ToastyQoL/Content/UI/PotionUI/Textures/rage", BuffID.Rage, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Rage.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Rage.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/rage", BuffID.Rage, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Regeneration", "Provides life regeneration", "ToastyQoL/Content/UI/PotionUI/Textures/regeneration", BuffID.Regeneration, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Regen.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Regen.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/regeneration", BuffID.Regeneration, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Shine", "Emits an aura of light", "ToastyQoL/Content/UI/PotionUI/Textures/shine", BuffID.Shine, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Shine.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Shine.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/shine", BuffID.Shine, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Sonar", "Detects hooked fish", "ToastyQoL/Content/UI/PotionUI/Textures/sonar", BuffID.Sonar, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Sonar.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Sonar.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/sonar", BuffID.Sonar, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Spelunker", "Shows the location of treasure and ore", "ToastyQoL/Content/UI/PotionUI/Textures/spelunker", BuffID.Spelunker, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Spelunker.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Spelunker.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/spelunker", BuffID.Spelunker, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Summoning", "Increases your max number of minions by 1", "ToastyQoL/Content/UI/PotionUI/Textures/summoning", BuffID.Summoning, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Summoning.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Summoning.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/summoning", BuffID.Summoning, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Swiftness", "25% increased movement speed", "ToastyQoL/Content/UI/PotionUI/Textures/swiftness", BuffID.Swiftness, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Swiftness.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Swiftness.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/swiftness", BuffID.Swiftness, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Thorns", "Attackers also take damage", "ToastyQoL/Content/UI/PotionUI/Textures/thorns", BuffID.Thorns, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Thorns.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Thorns.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/thorns", BuffID.Thorns, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Tipsy", "Increased melee abilities, lowered defense", "ToastyQoL/Content/UI/PotionUI/Textures/ale", BuffID.Tipsy, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Tipsy.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Tipsy.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/ale", BuffID.Tipsy, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Titan", "Increases knockback", "ToastyQoL/Content/UI/PotionUI/Textures/titan", BuffID.Titan, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Titan.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Titan.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/titan", BuffID.Titan, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Warmth", "Reduces damage from cold sources", "ToastyQoL/Content/UI/PotionUI/Textures/warmth", BuffID.Warmth, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Warmth.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Warmth.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/warmth", BuffID.Warmth, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Water Walking", "Allows the ability to walk on water", "ToastyQoL/Content/UI/PotionUI/Textures/waterWalking", BuffID.WaterWalking, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.WaterWalking.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.WaterWalking.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/waterWalking", BuffID.WaterWalking, () => true,
                 Weights.PreBoss),
 
-                new PotionElement("Wrath", "Increases damage by 10%", "ToastyQoL/Content/UI/PotionUI/Textures/wrath", BuffID.Wrath, () => true,
+                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Wrath.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Wrath.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/wrath", BuffID.Wrath, () => true,
                 Weights.PreBoss)
             });
 
@@ -372,7 +373,7 @@ namespace ToastyQoL.Content.UI.PotionUI
             {
                 Main.blockMouse = Main.LocalPlayer.mouseInterface = true;
                 spriteBatch.Draw(closeButtonGlowTexture, closeButtonDrawPos, null, Color.White * opacity, 0, closeButtonGlowTexture.Size() * 0.5f, 0.8f * scale, 0, 0);
-                Main.hoverItemName = "[c/de4444:Close Menu]";
+                Main.hoverItemName = Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Close.Menu");
                 if (Main.mouseLeft && Main.mouseLeftRelease || Main.mouseRight && Main.mouseRightRelease)
                 {
                     // ON CLICK AFFECT
@@ -391,7 +392,7 @@ namespace ToastyQoL.Content.UI.PotionUI
                 {
                     Main.blockMouse = Main.LocalPlayer.mouseInterface = true;
                     spriteBatch.Draw(closeButtonGlowTexture, closeButtonDrawPos, null, Color.White * opacity, 0, closeButtonGlowTexture.Size() * 0.5f, 0.8f * scale, 0, 0);
-                    Main.hoverItemName = "[c/de4444:Clear Potions]";
+                    Main.hoverItemName = Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Close.Potions");
                     if (Main.mouseLeft && Main.mouseLeftRelease || Main.mouseRight && Main.mouseRightRelease)
                     {
                         // ON CLICK AFFECT
@@ -451,7 +452,7 @@ namespace ToastyQoL.Content.UI.PotionUI
             if (mouseHitbox.Intersects(alphaHitbox) && CurrentSortingMode is not AToZPotionSort)
             {
                 alphaScale = 1.1f;
-                Main.hoverItemName = "[c/22a851:Sort by Name]";
+                Main.hoverItemName = Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Sort.SortName");
                 spriteBatch.Draw(alphaGlowTexture, alphaDrawPos, null, alphaColor * opacity, 0, alphaGlowTexture.Size() * 0.5f, alphaScale, 0, 0);
                 if (Main.mouseLeft && Main.mouseLeftRelease || Main.mouseRight && Main.mouseRightRelease)
                 {
@@ -462,7 +463,7 @@ namespace ToastyQoL.Content.UI.PotionUI
             else if (mouseHitbox.Intersects(progressionHitbox) && CurrentSortingMode is AToZPotionSort)
             {
                 progressionScale = 1.1f;
-                Main.hoverItemName = "[c/c05d32:Sort by Progression]";
+                Main.hoverItemName = Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Sort.SortProgression");
                 spriteBatch.Draw(progressionGlowTexture, progressionDrawPos, null, progressionColor * opacity, 0, progressionGlowTexture.Size() * 0.5f, progressionScale, 0, 0);
                 if (Main.mouseLeft && Main.mouseLeftRelease || Main.mouseRight && Main.mouseRightRelease)
                 {
@@ -660,20 +661,20 @@ namespace ToastyQoL.Content.UI.PotionUI
 
             if (SelectedPotions.Contains(potionElement))
             {
-                Utils.DrawBorderString(spriteBatch, "Currently Equipped", spawnPos + redTextDrawPos + new Vector2(0, size.Y / 1.6f), new Color(50, 200, 50) * opacity, 0.6f);
+                Utils.DrawBorderString(spriteBatch, Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Equipped"), spawnPos + redTextDrawPos + new Vector2(0, size.Y / 1.6f), new Color(50, 200, 50) * opacity, 0.6f);
                 if (drawRedText)
                     redTextDrawPos.Y += 15f;
             }
 
             if (drawRedText)
-                Utils.DrawBorderString(spriteBatch, "Past your progression", spawnPos + redTextDrawPos + new Vector2(0, size.Y / 1.6f), new Color(200, 50, 50) * opacity, 0.6f);
+                Utils.DrawBorderString(spriteBatch, Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Progression"), spawnPos + redTextDrawPos + new Vector2(0, size.Y / 1.6f), new Color(200, 50, 50) * opacity, 0.6f);
         }
 
         private static void DrawStaticText(SpriteBatch spriteBatch, Vector2 spawnPos, float opacity)
         {
-            string currentPotionsText = "Active Potions:";
+            string currentPotionsText = Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Active");
             Utils.DrawBorderString(spriteBatch, currentPotionsText, spawnPos + new Vector2(80, -22), Color.White * opacity);
-            string currentSortText = "Sort Mode:";
+            string currentSortText = Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Sort.Name");
             Utils.DrawBorderString(spriteBatch, currentSortText, spawnPos + new Vector2(-100, -163), Color.White * opacity);
         }
 
@@ -721,7 +722,7 @@ namespace ToastyQoL.Content.UI.PotionUI
                     Main.blockMouse = Main.LocalPlayer.mouseInterface = true;
                     spriteBatch.Draw(potionElement.PotionGlowTexture, potionDrawPos, null, Color.White * opacity, 0, potionElement.PotionTexture.Size() * 0.5f, potionElement.Scale, 0, 0);
                     DrawPotionSideInformation(spriteBatch, spawnPos, potionElement, opacity);
-                    Main.hoverItemName = "Remove";
+                    Main.hoverItemName = Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Remove");
                     if ((Main.mouseLeft && Main.mouseLeftRelease || Main.mouseRight && Main.mouseRightRelease) && TogglesUIManager.ClickCooldownTimer == 0)
                     {
                         TogglesUIManager.ClickCooldownTimer = 10;

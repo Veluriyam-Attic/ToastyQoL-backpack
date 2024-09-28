@@ -111,7 +111,7 @@ namespace ToastyQoL.Content.UI.UIManagers
                 typeof(Toggles).GetField("BossDPS", ToastyQoLUtils.UniversalBindingFlags)),
             };
 
-            TogglesPage uIManager = new(uIElements, MiscUIName, "Misc Toggles", ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/settingsUIIcon", AssetRequestMode.ImmediateLoad).Value, 5f);
+            TogglesPage uIManager = new(uIElements, MiscUIName, "Misc Toggles" /*Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.MiscUI")*/, ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/settingsUIIcon", AssetRequestMode.ImmediateLoad).Value, 5f);
             uIManager.TryRegister();
         }   
     }

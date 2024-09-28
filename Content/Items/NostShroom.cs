@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using ToastyQoL.Content.Buffs;
 
@@ -10,22 +11,16 @@ namespace ToastyQoL.Content.Items
 {
     public class NostShroom : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-            // DisplayName.SetDefault("Nostalgic Shrooms");
-            // Tooltip.SetDefault("The original\nThis gets replaced.");
-        }
-
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             TooltipLine obj = tooltips.LastOrDefault((x) => x.Name == "Tooltip1" && x.Mod == "Terraria");
-            obj.Text = "Creates 4 copies of things in various screen positions\nMay be hard on the eyes, be cautious with use.";
+            obj.Text = Language.GetTextValue($"Mods.ToastyQoL.Items.NostShroom.OtherTooltip.1") + "\n" + Language.GetTextValue($"Mods.ToastyQoL.Items.NostShroom.OtherTooltip.2");
             obj.OverrideColor = new Color(Main.DiscoR, Main.DiscoG, Main.DiscoB);
 
 
             TooltipLine obj2 = new(Mod, "1", "People who have nohit SCal with this:")
             {
-                Text = "People who have nohit SCal with this:"
+                Text = Language.GetTextValue($"Mods.ToastyQoL.Items.NostShroom.OtherTooltip.Info")
             };
             tooltips.Add(obj2);
 

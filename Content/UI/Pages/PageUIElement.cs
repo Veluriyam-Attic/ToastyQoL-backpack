@@ -7,6 +7,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using static ToastyQoL.Content.UI.UIManagers.TogglesPage;
 
@@ -26,8 +27,8 @@ namespace ToastyQoL.Content.UI.Pages
 
         public const string ColorTag = "c/ffcc44:";
         public const string DisabledTag = "c/de4444:";
-        public const string EnabledText = "[c/44de5a:Enabled]";
-        public const string DisabledText = $"[{DisabledTag}Disabled]";
+        public const string EnabledText = "[c/44de5a:Enabled]" /*Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.Enabled")*/;
+        public const string DisabledText = $"[{DisabledTag}Disabled]" /*Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.Disabled", DisabledTag)*/;
 
         public static Texture2D Lock => ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/lock", AssetRequestMode.ImmediateLoad).Value;
         public static Texture2D LockGlow => ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/lockGlow", AssetRequestMode.ImmediateLoad).Value;

@@ -14,6 +14,12 @@ NostShroom: {
 		原初之菇
 		This gets replaced.
 		'''
+
+	OtherTooltip: {
+		// 1: Creates 4 copies of things in various screen positions
+		// 2: May be hard on the eyes, be cautious with use.
+		// Info: People who have nohit SCal with this:
+	}
 }
 
 PercentGun: {

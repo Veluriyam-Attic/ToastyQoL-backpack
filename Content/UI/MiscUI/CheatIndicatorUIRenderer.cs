@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using ToastyQoL.Core;
 
@@ -47,17 +48,17 @@ namespace ToastyQoL.Content.UI.MiscUI
 
                 string IconHighlight;
                 if (Toggles.GodmodeEnabled)
-                    IconHighlight = "[c/cdd00c:Godmode Enabled]";
+                    IconHighlight = Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.PlayerCheat.Godmode");
                 else if (Toggles.InfiniteFlightTime)
-                    IconHighlight = "[c/78fa91:Infinite Flight Enabled]";
+                    IconHighlight = Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.PlayerCheat.InfiniteFlight");
                 else if (Toggles.InfiniteMana)
-                    IconHighlight = "[c/393dc0:Infinite Mana Enabled]";
+                    IconHighlight = Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.PlayerCheat.InfiniteMana");
                 else if (Toggles.InstantDeath)
-                    IconHighlight = "[c/f92a07:Instant Death Enabled]";
+                    IconHighlight = Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.PlayerCheat.InstantDeath");
                 else
-                    IconHighlight = "No Player Cheat";
+                    IconHighlight = Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.PlayerCheat.None");
 
-                Main.hoverItemName = IconHighlight + "\n[c/ffcc44:Click to open UI!]";
+                Main.hoverItemName = IconHighlight + "\n" + Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.OpenUI");
 
                 Main.blockMouse = Main.LocalPlayer.mouseInterface = true;
                 if (ToastyQoLUtils.CanAndHasClickedUIElement)
