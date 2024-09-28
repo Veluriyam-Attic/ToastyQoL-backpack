@@ -1,0 +1,14 @@
+DoubleTrippy: {
+	DisplayName: 加倍迷幻
+	Description: 好了，我觉得你已经吃够了……
+}
+
+NostTrippy: {
+	DisplayName: 迷幻
+	Description: 太美了……
+}
+
+ToasterBuff: {
+	DisplayName: 吐司炉
+	Description: 她尽力了，但还是会烤糊
+}

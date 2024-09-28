@@ -1,0 +1,233 @@
+DoubleShroom: {
+	DisplayName: 双倍蘑菇
+	Tooltip:
+		'''
+		Trippier (Hage)
+		This gets replaced.
+		'''
+}
+
+NostShroom: {
+	DisplayName: 怀旧蘑菇
+	Tooltip:
+		'''
+		原初之菇
+		This gets replaced.
+		'''
+}
+
+PercentGun: {
+	DisplayName: 定比削减者
+	Tooltip:
+		'''
+		为距离最近的目标削减其最大生命值的10%
+		可以用来拆解更复杂的战斗。
+		'''
+}
+
+SacrificialDagger: {
+	DisplayName: 舍身之匕
+	Tooltip:
+		'''
+		将玩家的生命值降到10
+		如果生命值已低至10及以下，则降到1
+		'''
+}
+
+RightClickToTen: <right>增加召唤数，最多为10
+IntantlySummons: 立即召唤
+
+BetsySpawner: {
+	DisplayName: 双足翼龙召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.DD2Betsy}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+DestSpawner: {
+	DisplayName: 毁灭者召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.TheDestroyer}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+DFSpawner: {
+	DisplayName: 猪龙鱼公爵召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.DukeFishron}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+EoLSpawner: {
+	DisplayName: 光之女皇召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.HallowBoss}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+GolemSpawner: {
+	DisplayName: 石巨人召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.Golem}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+LCSpawner: {
+	DisplayName: 拜月教徒召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.CultistBoss}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+MLSpawner: {
+	DisplayName: 月亮领主召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$Enemies.MoonLord}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+PlantSpawner: {
+	DisplayName: 世纪之花召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.Plantera}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+QSSpawner: {
+	DisplayName: 史莱姆皇后召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.QueenSlimeBoss}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+SkPrSpawner: {
+	DisplayName: 机械骷髅王召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.SkeletronPrime}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+TwinsSpawner: {
+	DisplayName: 双子魔眼召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$Enemies.TheTwins}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+BoCSpawner: {
+	DisplayName: 克苏鲁之脑召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons} {$NPCName.BrainofCthulhu}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+DCSpawner: {
+	DisplayName: 独眼巨鹿召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.Deerclops}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+EOCSpawner: {
+	DisplayName: 克苏鲁之眼召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.EyeofCthulhu}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+EoWSpawner: {
+	DisplayName: 世界吞噬者召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.EaterofWorldsHead}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+KSSpawner: {
+	DisplayName: 史莱姆王召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.KingSlime}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+QBSpawner: {
+	DisplayName: 蜂后召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.QueenBee}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+SkeletronSpawner: {
+	DisplayName: 骷髅王召唤器
+	Tooltip:
+		'''
+		{$IntantlySummons}{$NPCName.SkeletronHead}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+WoFSpawner: {
+	DisplayName: 血肉墙召唤器
+	Tooltip:
+		'''
+		在你的左侧{$IntantlySummons}{$NPCName.WallofFlesh}
+		{$RightClickToTen}
+		Spawn Count
+		'''
+}
+
+ToasterItem: {
+	DisplayName: 吐司炉
+	Tooltip: "“叮！”"
+}
