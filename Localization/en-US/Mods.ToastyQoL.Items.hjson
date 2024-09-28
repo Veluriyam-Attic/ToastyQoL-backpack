@@ -36,6 +36,7 @@ SacrificialDagger: {
 
 RightClickToTen: <right> to increase spawn count up to 10
 IntantlySummons: Instantly summons
+SpawnCount: Spawn Count
 
 BetsySpawner: {
 	DisplayName: Betsy Spawner
@@ -43,7 +44,7 @@ BetsySpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.DD2Betsy}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -53,7 +54,7 @@ DestSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.TheDestroyer}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -63,7 +64,7 @@ DFSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.DukeFishron}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -73,7 +74,7 @@ EoLSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.HallowBoss}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -83,7 +84,7 @@ GolemSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.Golem}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -93,7 +94,7 @@ LCSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.CultistBoss}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -103,7 +104,7 @@ MLSpawner: {
 		'''
 		{$IntantlySummons} {$Enemies.MoonLord}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -113,7 +114,7 @@ PlantSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.Plantera}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -123,7 +124,7 @@ QSSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.QueenSlimeBoss}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -133,7 +134,7 @@ SkPrSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.SkeletronPrime}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -143,7 +144,7 @@ TwinsSpawner: {
 		'''
 		{$IntantlySummons} {$Enemies.TheTwins}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -153,7 +154,7 @@ BoCSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.BrainofCthulhu}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -163,7 +164,7 @@ DCSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.Deerclops}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -173,7 +174,7 @@ EOCSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.EyeofCthulhu}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -183,7 +184,7 @@ EoWSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.EaterofWorldsHead}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -193,7 +194,7 @@ KSSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.KingSlime}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -203,7 +204,7 @@ QBSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.QueenBee}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -213,7 +214,7 @@ SkeletronSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.SkeletronHead}
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 
@@ -223,7 +224,7 @@ WoFSpawner: {
 		'''
 		{$IntantlySummons} {$NPCName.WallofFlesh} on your left.
 		{$RightClickToTen}
-		Spawn Count
+		{$SpawnCount}
 		'''
 }
 

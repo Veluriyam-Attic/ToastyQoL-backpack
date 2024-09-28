@@ -36,6 +36,7 @@ SacrificialDagger: {
 
 RightClickToTen: <right>增加召唤数，最多为10
 IntantlySummons: 立即召唤
+// SpawnCount: Spawn Count
 
 BetsySpawner: {
 	DisplayName: 双足翼龙召唤器
@@ -229,5 +230,5 @@ WoFSpawner: {
 
 ToasterItem: {
 	DisplayName: 吐司炉
-	Tooltip: "“叮！”"
+	Tooltip: “叮！”
 }

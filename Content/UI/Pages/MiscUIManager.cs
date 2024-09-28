@@ -4,6 +4,7 @@ using ReLogic.Content;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using ToastyQoL.Content.UI.Pages;
 using ToastyQoL.Core;
@@ -20,16 +21,16 @@ namespace ToastyQoL.Content.UI.UIManagers
             {
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/gravestone", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/gravestoneGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Gravestones",
-                () => "Enable Gravestones dropping",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.Gravestones.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.Gravestones.Description"),
                 1f,
                 () => { Toggles.GravestonesEnabled = !Toggles.GravestonesEnabled; },
                 typeof(Toggles).GetField("GravestonesEnabled", ToastyQoLUtils.UniversalBindingFlags)),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/lightHack", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/lightHackGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Light Hack",
-                () => Toggles.LightHack < 1 ? "Set Light Hack to " + ((Toggles.LightHack + 0.25f) * 100f).ToString() + "%" : "Turn Light Hack off",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.LightHack.Name"),
+                () => Toggles.LightHack < 1 ? Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.LightHack.Description") + (" ") + ((Toggles.LightHack + 0.25f) * 100f).ToString() + "%" : Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.LightHack.Disable"),
                 2f,
                 () => 
                 {
@@ -42,41 +43,41 @@ namespace ToastyQoL.Content.UI.UIManagers
                         _ => 0f, 
                     };
 
-                    string text = $"Set to {Toggles.LightHack * 100f}%";
+                    string text = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.LightHack.SetTo", Toggles.LightHack * 100f);
                     if (Toggles.LightHack == 0f)
-                        text = "Turned Off";
+                        text = Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.LightHack.Disable2");
 
                     TogglesUIManager.QueueMessage(text, Color.LightSkyBlue);
                 }),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/shroom", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/shroomGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Shrooms Damage",
-                () => "Toggles the bonus damage given by the Odd Mushroom family",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.Shrooms.Normal.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.Shrooms.Normal.Description"),
                 3f,
                 () => { Toggles.ShroomsExtraDamage = !Toggles.ShroomsExtraDamage; },
                 typeof(Toggles).GetField("ShroomsExtraDamage", ToastyQoLUtils.UniversalBindingFlags)),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/shroom", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/shroomGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Full Shrooms",
-                () => "Toggles a custom odd mushroom effect that perfectly copies]\n[c/ffcc44:almost everything]",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.Shrooms.Full.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.Shrooms.Full.Description"),
                 4f,
                 () => { Toggles.ProperShrooms = !Toggles.ProperShrooms; },
                 typeof(Toggles).GetField("ProperShrooms", ToastyQoLUtils.UniversalBindingFlags)),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/shroom", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/shroomGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Full Shrooms RGB",
-                () => "Toggles making proper shrooms have the RGB shader effect",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.Shrooms.Full.RGBName"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.Shrooms.Full.RGBDescription"),
                 5f,
                 () => { Toggles.ShroomShader = !Toggles.ShroomShader; },
                 typeof(Toggles).GetField("ShroomShader", ToastyQoLUtils.UniversalBindingFlags)),
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/time", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/timeGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle MNL Indicator",
-                () => "Shows a chat message informing you how close you]\n[c/ffcc44:were to a bosses MNL according to nohit rules",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.MNL.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.MNL.Description"),
                 6f,
                 () =>
                 {
@@ -89,8 +90,8 @@ namespace ToastyQoL.Content.UI.UIManagers
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/sass", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/sassGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle Sass Mode",
-                () => "Shows a chat message when you die that]\n[c/ffcc44:insults you",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.Sass.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.Sass.Description"),
                 7f,
                 () =>
                 { 
@@ -103,8 +104,8 @@ namespace ToastyQoL.Content.UI.UIManagers
 
                 new PageUIElement(ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/dps", AssetRequestMode.ImmediateLoad).Value,
                 ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/dpsGlow", AssetRequestMode.ImmediateLoad).Value,
-                () => "Toggle DPS Stats",
-                () => "Shows a chat message that tells you the average dps you had]\n[c/ffcc44:on a boss",
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.DPS.Name"),
+                () => Language.GetTextValue($"Mods.ToastyQoL.UI.Toggles.DPS.Description"),
                 8f,
                 () => { Toggles.BossDPS = !Toggles.BossDPS; },
                 typeof(Toggles).GetField("BossDPS", ToastyQoLUtils.UniversalBindingFlags)),

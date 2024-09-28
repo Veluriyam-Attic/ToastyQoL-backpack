@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+﻿/*using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -44,8 +44,7 @@ namespace ToastyQoL.Content.Items
                 float lifeRatio = target.life / (float)target.lifeMax;
                 if (lifeRatio > 0.1)
                 {
-                    int damageToDeal = target.lifeMax / 10;
-                    target.life -= damageToDeal;
+                    target.life -= target.lifeMax / 10;
                 }
                 else
                 {
@@ -65,3 +64,4 @@ namespace ToastyQoL.Content.Items
         }
     }
 }
+*/
