@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace ToastyQoL.Content.Items.Spawners.PreHardmode
@@ -12,6 +13,7 @@ namespace ToastyQoL.Content.Items.Spawners.PreHardmode
     {
         public int Amount = 1;
         public Color TextColor = new(153, 0, 0);
+        public string bossname = Language.GetTextValue($"NPCName.SkeletronHead");
 
         public override void SetStaticDefaults()
         {
@@ -43,7 +45,7 @@ namespace ToastyQoL.Content.Items.Spawners.PreHardmode
                     Amount = 1;
                 if (Amount < 1)
                     Amount = 10;
-                Main.NewText("Skeletron Spawn Count: " + Amount, TextColor);
+                Main.NewText(Language.GetTextValue($"Mods.ToastyQoL.Items.SpawnCountChat", bossname, Amount), TextColor);
             }
             else
             {
@@ -71,10 +73,10 @@ namespace ToastyQoL.Content.Items.Spawners.PreHardmode
                 if (l.Text == null)
                     continue;
 
-                if (l.Text.StartsWith("Spawn Count"))
+                if (l.Text.StartsWith("[Spawn Count]"))
                 {
                     l.OverrideColor = color;
-                    l.Text = "Spawn Count: " + Amount;
+                    l.Text = Language.GetTextValue($"Mods.ToastyQoL.Items.SpawnCountTooltip", Amount);
 
 
                 }
