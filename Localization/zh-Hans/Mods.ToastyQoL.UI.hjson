@@ -1,20 +1,20 @@
 UIButtons: {
-	// OpenUI: "[c/ffcc44:Click to open UI!]"
-	// WorldUI: World Toggles
-	// MiscUI: Misc Toggles
-	// PowersUI: Powers Toggles
-	// LocksUI: Progression Locks
-	// BossUI: Boss Toggles
-	// PotionsUI: Toggle Potions
-	// Enabled: "[c/44de5a:Enabled]"
-	// Disabled: "[{0}Disabled]"
+	OpenUI: "[c/ffcc44:点击以打开UI！]"
+	WorldUI: 世界设置
+	MiscUI: 杂项设置
+	PowersUI: 能力设置
+	LocksUI: 时期锁
+	BossUI: Boss 设置
+	PotionsUI: 切换药水
+	Enabled: "[c/44de5a:已启用]"
+	Disabled: "[{0}已禁用]"
 
 	PlayerCheat: {
-		// Godmode: "[c/cdd00c:Godmode Enabled]"
-		// InfiniteFlight: "[c/78fa91:Infinite Flight Enabled]"
-		// InfiniteMana: "[c/393dc0:Infinite Mana Enabled]"
-		// InstantDeath: "[c/f92a07:Instant Death Enabled]"
-		// None: No Player Cheat
+		Godmode: "[c/cdd00c:无敌模式已启用]"
+		InfiniteFlight: "[c/78fa91:无限飞行已启用]"
+		InfiniteMana: "[c/393dc0:无限魔力已启用]"
+		InstantDeath: "[c/f92a07:受击即死已启用]"
+		None: 未启用作弊
 	}
 }
 
@@ -34,222 +34,222 @@ Toggles: {
 
 	Shrooms: {
 		Normal: {
-			// Name: Toggle Shrooms Damage
-			// Description: Toggles the bonus damage given by the Odd Mushroom family
+			Name: 切换蘑菇增伤
+			Description: 切换蘑菇系列是否提供额外伤害加成
 		}
 
 		Full: {
-			// Name: Toggle Full Shrooms
-			// Description: Toggles a custom odd mushroom effect that perfectly copies][c/ffcc44: almost everything
-			// RGBName: Toggle Full Shrooms RGB
-			// RGBDescription: Toggles making proper shrooms have the RGB shader effect
+			Name: 切换完整蘑菇
+			Description: 这种独特的蘑菇效果能制造][c/ffcc44:几乎一切][c/ffcc44:的幻影
+			RGBName: 切换完整蘑菇RGB
+			RGBDescription: 为蘑菇添加RGB着色器效果
 		}
 	}
 
 	MNL: {
-		// Name: Toggle MNL Indicator
-		// Description: Shows a chat message informing you how close you][c/ffcc44: were to a bosses MNL according to nohit rules
+		Name: 切换击杀时间显示
+		Description: 在聊天栏显示你与无伤规则中的最低击杀时间之间的距离
 	}
 
 	Sass: {
-		// Name: Toggle Sass Mode
-		// Description: Shows a chat message when you die that][c/ffcc44: insults you
+		Name: 切换羞辱模式
+		Description: 当你死亡时在聊天栏显示一条信息来羞辱你
 	}
 
 	DPS: {
-		// Name: Toggle DPS Stats
-		// Description: Shows a chat message that tells you the average dps you had][c/ffcc44: on a boss
+		Name: 切换每秒伤害统计
+		Description: 在聊天栏显示你对Boss的平均每秒伤害
 	}
 
 	WorldUI: {
 		RevealMap: {
-			// Name: Reveal The Full Map
-			// Description: Fills out all of your map, cannot be reversed
+			Name: 解锁完整地图
+			Description: 解锁你的全部地图，不可撤销
 		}
 
 		EnemySpawns: {
-			// Name: Toggle Enemy Spawns
-			// Description: Toggles blocking enemies from spawning
+			Name: 切换敌人生成
+			Description: 允许或禁止敌怪生成
 		}
 
 		Time: {
 			TimeFlow: {
-				// Name: Toggle Time Flow
-				// Description: Toggles the flow of time
+				Name: 切换时间流逝
+				Description: 允许或禁止时间流逝
 			}
 
-			// Name: Toggle Day Time
-			// Description: Swaps between night and day
-			// TimeDay: Time set to Day
-			// TimeNight: Time set to Night
+			Name: 切换日夜
+			Description: 在白天和夜晚之间切换
+			TimeDay: 已切换到白天
+			TimeNight: 已切换到夜晚
 		}
 
 		ToggleRain: {
-			// Name: Toggle Rain
-			// Description: Toggles a rainstorm
+			Name: 切换降雨
+			Description: 开启一场暴风雨
 		}
 
 		DisableEvents: {
-			// Name: Disable Events
-			// Description: Cancels/disables any active events
+			Name: 取消事件
+			Description: 可以取消及禁止所有事件
 		}
 
 		WorldDifficulty: {
-			// Name: Toggle World Difficulty
+			Name: 切换世界难度
 
 			Difficulty: {
-				// SetTo: Set the world difficulty to {0}
+				SetTo: 将世界难度设置为{0}
 
 				Journey: {
-					// Name: Journey
-					// Enable: Journey enabled
+					Name: 旅途模式
+					Enable: 当前为旅途模式
 				}
 
 				Normal: {
-					// Name: Normal
-					// Enable: Normal enabled
+					Name: 经典模式
+					Enable: 当前为经典模式
 				}
 
 				Expert: {
-					// Name: Expert
-					// Enable: Expert enabled
+					Name: 专家模式
+					Enable: 当前为专家模式
 				}
 
 				Master: {
-					// Name: Master
-					// Enable: Master enabled
+					Name: 大师模式
+					Enable: 当前为大师模式
 				}
 			}
 		}
 
 		BiomeFountains: {
-			// Name: Toggle Biome Fountains
-			// Description: Water fountains now force their biome post Queen Bee
+			Name: 切换生物群系喷泉
+			Description: 击败蜂后之后，喷泉会改变生物群系
 		}
 
 		PlayerDifficulty: {
-			// Name: Toggle Player Difficulty
+			Name: 切换玩家难度
 
 			Difficulty: {
-				// SetTo: Set the player difficulty to {0}
+				SetTo: 将玩家难度设置为{0}
 
 				Classic: {
-					// Name: Classic
-					// Enable: Classic enabled
+					Name: 经典难度
+					Enable: 已设置为经典难度
 				}
 
 				Mediumcore: {
-					// Name: Mediumcore
-					// Enable: Mediumcore enabled
+					Name: 中核难度
+					Enable: 已设置为中核难度
 				}
 
 				Hardcore: {
-					// Name: Hardcore
-					// Enable: Hardcore enabled
+					Name: 硬核难度
+					Enable: 已设置为硬核难度
 				}
 			}
 		}
 
 		MapTeleporting: {
-			// Name: Toggle Map Teleporting
-			// Description: Toggles right clicking the fullscreen map to teleport
+			Name: 切换地图传送
+			Description: 允许或禁止在全屏地图上右键以全图传送
 		}
 	}
 
 	PowersUI: {
 		Godmode: {
-			// Name: Toggle Godmode
-			// Description: Prevents you from taking damage
+			Name: 切换无敌模式
+			Description: 使你无法受到伤害
 		}
 
 		InstantDeath: {
-			// Name: Toggle Instant Death
-			// Description: Makes you die upon taking damage
+			Name: 切换受击即死
+			Description: 使你在受到任何伤害时立刻死亡
 		}
 
 		InfiniteFlight: {
-			// Name: Toggle Infinite Flight
-			// Description: You never run out of flight time
+			Name: 切换无限飞行
+			Description: 你永远不会耗尽飞行时间
 		}
 
 		InfinitePotions: {
-			// Name: Toggle Infinite Potions
-			// Description: Potion durations are infinite
+			Name: 切换无限药水
+			Description: 药水持续时间变为无限
 		}
 
 		InfiniteAmmo: {
-			// Name: Toggle Infinite Ammo
-			// Description: Ammo is not consumed
+			Name: 切换无限弹药
+			Description: 你不会消耗任何弹药
 		}
 
 		InfiniteConsumables: {
-			// Name: Toggle Infinite Consumables
-			// Description: Consumables are not consumed
+			Name: 切换无限消耗品
+			Description: 你使用消耗品时不会减少它们的数量
 		}
 	}
 
 	LocksUI: {
 		Potion: {
 			Tooltips: {
-				// Name: Toggle Potion Tooltips
-				// Description: Adds a tooltip to potions past your progression point
+				Name: 切换药水时期提示
+				Description: 为超时期药水添加一条相应的物品说明
 			}
 
 			Locks: {
-				// Name: Toggle Potion Locks
-				// Description: Prevents drinking potions past your progression point
+				Name: 切换药水锁
+				Description: 阻止你饮下超时期药水
 			}
 		}
 
 		Item: {
 			Tooltips: {
-				// Name: Toggle Item Tooltips
-				// Description: Adds a tooltip to some items past your progression point
+				Name: 切换物品时期提示
+				Description: 为一些超时期物品添加一条相应的物品说明
 			}
 
 			Locks: {
-				// Name: Toggle Item Locks
-				// Description: Prevents using some items past your progression point
+				Name: 切换物品锁
+				Description: 阻止你使用超时期物品
 			}
 		}
 	}
 
 	BossUI: {
-		// DisableAll: "[c/ffcc44:Mark every boss as dead]"
-		// Explanation: "[c/659cff:Hold L-SHIFT to toggle every boss up to the selected boss']"
-		// Explanation2: "[c/659cff:progression to the selected boss' state when clicking]"
-		// EnableAll: "[c/ffcc44:Mark every boss as alive]"
-		// Toggle: "[c/ffcc44:Toggle {0}'s Death]"
-		// Dead: "[c/f92a07:Dead]"
-		// Alive: "[c/19a028:Alive]"
+		DisableAll: "[c/ffcc44:将所有Boss设置为已击败]"
+		Explanation: "[c/659cff:按住左shift点击以将所选择Boss前的]"
+		Explanation2: "[c/659cff:所有Boss设置为此Boss的击败状态]"
+		EnableAll: "[c/ffcc44:将所有Boss设置为未击败]"
+		Toggle: "[c/ffcc44:切换{0}的击败状态]"
+		Dead: "[c/f92a07:已击败]"
+		Alive: "[c/19a028:未击败]"
 	}
 }
 
 SummonUI: {
-	// Max: Max Minion Slots:
-	// Free: Free Minion Slots:
-	// Used: Used Minion Slots:
+	Max: 最大召唤栏：
+	Free: 可用召唤栏：
+	Used: 已用召唤栏：
 }
 
 Potions: {
-	// Equipped: Currently Equipped
-	// Progression: Past your progression
-	// Active: Active Potions:
-	// Remove: Remove
+	Equipped: 当前已生效
+	Progression: 超过了时期进度
+	Active: 已生效药水
+	Remove: 移除
 
 	Sort: {
-		// Name: Sort Mode:
-		// SortName: "[c/22a851:Sort by Name]"
-		// SortProgression: "[c/c05d32:Sort by Progression]"
+		Name: 排序方式：
+		SortName: "[c/22a851:名称]"
+		SortProgression: "[c/c05d32:进度]"
 	}
 
 	Close: {
-		// Potions: "[c/de4444:Clear Potions]"
-		// Menu: "[c/de4444:Close Menu]"
+		Potions: "[c/de4444:清除药水]"
+		Menu: "[c/de4444:关闭窗口]"
 	}
 
 	AmmoRes: {
-		// Name: Ammo Reservation
+		Name: Ammo Reservation
 		// Description: 20% chance to not consume ammo
 	}
 

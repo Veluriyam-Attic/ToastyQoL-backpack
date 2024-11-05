@@ -4,6 +4,7 @@ using ReLogic.Content;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using ToastyQoL.Content.UI.BossUI;
 using ToastyQoL.Content.UI.PotionUI;
@@ -13,6 +14,8 @@ namespace ToastyQoL.Content.UI.SingleElements
 {
     public static class SingleElementAutoloader
     {
+        
+        public static string bossToggles => Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.BossUI");
         public static void Initialize()
         {
             SingleActionElement setSpawnElement = new("SetSpawn", ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/setSpawnUIIcon", AssetRequestMode.ImmediateLoad).Value,
@@ -36,7 +39,7 @@ namespace ToastyQoL.Content.UI.SingleElements
             potionElement.TryRegister();
 
             SingleActionElement bossElement = new("BossUI", ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/bossDeathsUIIcon", AssetRequestMode.ImmediateLoad).Value,
-                "Boss Toggles", () =>
+                bossToggles, () =>
                 {
 
                 }, 8f, 
