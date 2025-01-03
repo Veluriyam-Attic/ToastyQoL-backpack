@@ -15,8 +15,8 @@ namespace ToastyQoL.Core.Systems
             public Func<bool> PastTierCheck;
 
             //public string BossName;
-            public string BossKey { get; init; }
-            public string GetLocalizedBossName() => Language.GetTextValue($"Mods.ToastyQoL.Tiering.{BossKey}");
+            private readonly string _bossKey;
+            public string BossName { get { return Language.GetTextValue(_bossKey); } }
 
             public List<int> AssosiatedItemTypes;
 
@@ -25,7 +25,7 @@ namespace ToastyQoL.Core.Systems
             public BossLockInformation(Func<bool> pastTierCheck, string bossKey, List<int> assosiatedItemTypes, float weight = 1f)
             {
                 PastTierCheck = pastTierCheck;
-                BossKey = bossKey;
+                _bossKey = bossKey;
                 AssosiatedItemTypes = assosiatedItemTypes;
                 Weight = weight;
             }
@@ -142,7 +142,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                  new BossLockInformation(() => SavingSystem.DownedBrain && SavingSystem.DownedEater,
-                    "Eowboc",
+                    $"Mods.ToastyQoL.Tiering.Eowboc",
                     new()
                     {
                         //Vanilla
@@ -237,7 +237,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                    new BossLockInformation(() => NPC.downedMechBoss2,
-                    "Twins",
+                    "Enemies.TheTwins",
                     new()
                     {
                         ItemID.MagicalHarp,
