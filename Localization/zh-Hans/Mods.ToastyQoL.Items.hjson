@@ -42,7 +42,7 @@ SacrificialDagger: {
 
 RightClickToTen: <right>增加召唤数，最多为10
 IntantlySummons: 立即召唤
-SpawnCountTooltip: "召唤计数：{0}"
+SpawnCountTooltip: 召唤计数：{0}
 SpawnCountChat: "{0}召唤计数：{1}"
 
 BetsySpawner: {

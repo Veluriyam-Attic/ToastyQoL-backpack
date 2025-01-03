@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace ToastyQoL.Core.Systems
@@ -13,16 +14,18 @@ namespace ToastyQoL.Core.Systems
         {
             public Func<bool> PastTierCheck;
 
-            public string BossName;
+            //public string BossName;
+            public string BossKey { get; init; }
+            public string GetLocalizedBossName() => Language.GetTextValue($"Mods.ToastyQoL.Tiering.{BossKey}");
 
             public List<int> AssosiatedItemTypes;
 
             public float Weight;
 
-            public BossLockInformation(Func<bool> pastTierCheck, string bossName, List<int> assosiatedItemTypes, float weight = 1f)
+            public BossLockInformation(Func<bool> pastTierCheck, string bossKey, List<int> assosiatedItemTypes, float weight = 1f)
             {
                 PastTierCheck = pastTierCheck;
-                BossName = bossName;
+                BossKey = bossKey;
                 AssosiatedItemTypes = assosiatedItemTypes;
                 Weight = weight;
             }
@@ -138,7 +141,8 @@ namespace ToastyQoL.Core.Systems
                         ItemID.EoCShield,
                     }),
 
-                 new BossLockInformation(() => SavingSystem.DownedBrain && SavingSystem.DownedEater,Language.GetTextValue($"Mods.ToastyQoL.Tiering.Eowboc"),
+                 new BossLockInformation(() => SavingSystem.DownedBrain && SavingSystem.DownedEater,
+                    "Eowboc",
                     new()
                     {
                         //Vanilla

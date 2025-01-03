@@ -14,7 +14,8 @@ NostShroom: {
 		The original
 		This gets replaced.
 		'''
-	OtherTooltip:{
+
+	OtherTooltip: {
 		1: Creates 4 copies of things in various screen positions
 		2: May be hard on the eyes, be cautious with use.
 		Info: People who have nohit SCal with this:
@@ -41,7 +42,7 @@ SacrificialDagger: {
 
 RightClickToTen: <right> to increase spawn count up to 10
 IntantlySummons: Instantly summons
-SpawnCountTooltip: "Spawn Count: {0}"
+SpawnCountTooltip: Spawn Count: {0}
 SpawnCountChat: "{0} Spawn Count: {1}"
 
 BetsySpawner: {

@@ -10,7 +10,7 @@ namespace ToastyQoL.Core.Globals
     {
         public TooltipLine CreateProgressionTooltip(int itemType, BossLockInformation bossLockInformation)
         {
-            string text = $"This is post {bossLockInformation.BossName}, you should probably not be using it.";
+            string text = $"This is post {bossLockInformation.GetLocalizedBossName()}, you should probably not be using it.";
             return new TooltipLine(Mod, $"ItemLock{itemType}", text)
             {
                 OverrideColor = Color.Red
