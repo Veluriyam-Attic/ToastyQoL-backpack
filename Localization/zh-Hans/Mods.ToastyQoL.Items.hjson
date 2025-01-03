@@ -5,6 +5,14 @@ DoubleShroom: {
 		Trippier (Hage)
 		This gets replaced.
 		'''
+	OtherTooltip:{
+		1: 
+		'''
+		在屏幕的各个方向制造8个幻影
+		可能会对眼睛造成伤害，请谨慎使用。
+		'''
+		2: 您配吗？
+	}
 }
 
 NostShroom: {
@@ -16,9 +24,9 @@ NostShroom: {
 		'''
 
 	OtherTooltip: {
-		// 1: Creates 4 copies of things in various screen positions
-		// 2: May be hard on the eyes, be cautious with use.
-		// Info: People who have nohit SCal with this:
+		1: 在屏幕的各个方向制造4个幻影
+		2: 可能会对眼睛造成伤害，请谨慎使用。
+		Info: 以下是使用这个成功无伤至尊灾厄的名单：
 	}
 }
 

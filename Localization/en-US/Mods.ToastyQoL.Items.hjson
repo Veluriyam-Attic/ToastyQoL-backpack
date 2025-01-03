@@ -5,6 +5,14 @@ DoubleShroom: {
 		Trippier (Hage)
 		This gets replaced.
 		'''
+	OtherTooltip:{
+		1: 
+		'''
+		Creates 8 copies of things in various screen positions
+		May be hard on the eyes, be cautious with use.
+		'''
+		2: Are you worthy?
+	}
 }
 
 NostShroom: {
