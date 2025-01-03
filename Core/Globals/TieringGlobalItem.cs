@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using Terraria;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using static ToastyQoL.Core.Systems.TieringSystem;
 
@@ -10,7 +11,7 @@ namespace ToastyQoL.Core.Globals
     {
         public TooltipLine CreateProgressionTooltip(int itemType, BossLockInformation bossLockInformation)
         {
-            string text = $"This is post {bossLockInformation.BossName}, you should probably not be using it.";
+            string text = Language.GetTextValue($"Mods.ToastyQoL.Tiering.ProgressionInformation",bossLockInformation.BossName);
             return new TooltipLine(Mod, $"ItemLock{itemType}", text)
             {
                 OverrideColor = Color.Red
