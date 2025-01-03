@@ -138,8 +138,7 @@ namespace ToastyQoL.Core.Systems
                         ItemID.EoCShield,
                     }),
 
-                 new BossLockInformation(() => SavingSystem.DownedBrain && SavingSystem.DownedEater,
-                    "EoW/BoC",
+                 new BossLockInformation(() => SavingSystem.DownedBrain && SavingSystem.DownedEater,Language.GetTextValue($"Mods.ToastyQoL.Tiering.Eowboc"),
                     new()
                     {
                         //Vanilla
