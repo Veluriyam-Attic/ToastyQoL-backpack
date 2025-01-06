@@ -5,12 +5,13 @@ DoubleShroom: {
 		Trippier (Hage)
 		This gets replaced.
 		'''
-	OtherTooltip:{
-		1: 
-		'''
-		在屏幕的各个方向制造8个幻影
-		可能会对眼睛造成伤害，请谨慎使用。
-		'''
+
+	OtherTooltip: {
+		1:
+			'''
+			在屏幕的各个方向制造8个幻影
+			可能会对眼睛造成伤害，请谨慎使用。
+			'''
 		2: 您配吗？
 	}
 }
