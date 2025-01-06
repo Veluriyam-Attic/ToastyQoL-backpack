@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using ToastyQoL.Content.Buffs;
 
@@ -39,11 +40,11 @@ namespace ToastyQoL.Content.Items
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             TooltipLine obj = tooltips.LastOrDefault((x) => x.Name == "Tooltip1" && x.Mod == "Terraria");
-            obj.Text = "Creates 8 copies of things in various screen positions\nMay be hard on the eyes, be cautious with use.";
+            obj.Text = Language.GetTextValue($"Mods.ToastyQoL.Items.DoubleShroom.OtherTooltip.1");
             obj.OverrideColor = new Color(Main.DiscoR, Main.DiscoG, Main.DiscoB);
 
             TooltipLine obj2 = tooltips.FirstOrDefault((x) => x.Name == "Tooltip0" && x.Mod == "Terraria");
-            obj2.Text = "Are you worthy?";
+            obj2.Text = Language.GetTextValue($"Mods.ToastyQoL.Items.DoubleShroom.OtherTooltip.2");
             obj2.OverrideColor = new Color(244, 127, 255, 255);
         }
 

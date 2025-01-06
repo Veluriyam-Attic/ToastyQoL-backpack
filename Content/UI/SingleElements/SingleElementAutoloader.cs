@@ -4,6 +4,7 @@ using ReLogic.Content;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using ToastyQoL.Content.UI.BossUI;
 using ToastyQoL.Content.UI.PotionUI;
@@ -13,10 +14,11 @@ namespace ToastyQoL.Content.UI.SingleElements
 {
     public static class SingleElementAutoloader
     {
+
         public static void Initialize()
         {
             SingleActionElement setSpawnElement = new("SetSpawn", ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/setSpawnUIIcon", AssetRequestMode.ImmediateLoad).Value,
-                "Set Spawn", () =>
+                "Mods.ToastyQoL.UI.UIButtons.SetSpawn", () =>
                 {
                     Main.spawnTileX = (int)(Main.LocalPlayer.position.X - 8f + Main.LocalPlayer.width / 2) / 16;
                     Main.spawnTileY = (int)(Main.LocalPlayer.position.Y + Main.LocalPlayer.height) / 16;
@@ -25,7 +27,7 @@ namespace ToastyQoL.Content.UI.SingleElements
             setSpawnElement.TryRegister();
 
             SingleActionElement potionElement = new("PotionUI", ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/potionUIIcon", AssetRequestMode.ImmediateLoad).Value,
-                "Toggle Potions", () =>
+                "Mods.ToastyQoL.UI.UIButtons.PotionsUI", () =>
                 {
                     TogglesUIManager.CloseUI();
                     PotionUIManager.IsDrawing = !PotionUIManager.IsDrawing;
@@ -36,7 +38,7 @@ namespace ToastyQoL.Content.UI.SingleElements
             potionElement.TryRegister();
 
             SingleActionElement bossElement = new("BossUI", ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/bossDeathsUIIcon", AssetRequestMode.ImmediateLoad).Value,
-                "Boss Toggles", () =>
+                "Mods.ToastyQoL.UI.UIButtons.BossUI", () =>
                 {
 
                 }, 8f, 

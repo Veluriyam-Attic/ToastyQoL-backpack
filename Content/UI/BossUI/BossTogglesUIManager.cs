@@ -34,58 +34,58 @@ namespace ToastyQoL.Content.UI.BossUI
         #region Methods
         public static void InitializeBossElements()
         {
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/kingSlime", "King Slime",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/kingSlime", Language.GetTextValue($"NPCName.KingSlime"),
                 typeof(NPC).GetField("downedSlimeKing", ToastyQoLUtils.UniversalBindingFlags), Weights.PostKingSlime).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/eoc", "Eye of Cthulhu",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/eoc", Language.GetTextValue($"NPCName.EyeofCthulhu"),
                 typeof(NPC).GetField("downedBoss1", ToastyQoLUtils.UniversalBindingFlags), Weights.PostEyeOfCthulhu).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/eow", "Eater of World",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/eow", Language.GetTextValue($"NPCName.EaterofWorldsHead"),
                 typeof(SavingSystem).GetField("_downedEater", ToastyQoLUtils.UniversalBindingFlags), Weights.PostEaterOfWorlds).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/boc", "Brain of Cthulhu",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/boc", Language.GetTextValue($"NPCName.BrainofCthulhu"),
                 typeof(SavingSystem).GetField("_downedBrain", ToastyQoLUtils.UniversalBindingFlags), Weights.PostBrainOfCthulhu).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/queenBee", "Queen Bee",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/queenBee", Language.GetTextValue($"NPCName.QueenBee"),
                 typeof(NPC).GetField("downedQueenBee", ToastyQoLUtils.UniversalBindingFlags), Weights.PostQueenBee).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/deerclops", "Deerclops",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/deerclops", Language.GetTextValue($"NPCName.Deerclops"),
                 typeof(NPC).GetField("downedDeerclops", ToastyQoLUtils.UniversalBindingFlags), Weights.PostDeerclops, 0.85f).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/skeletron", "Skeletron",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/skeletron", Language.GetTextValue($"NPCName.SkeletronHead"),
                 typeof(NPC).GetField("downedBoss3", ToastyQoLUtils.UniversalBindingFlags), Weights.PostSkeletron).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/wof", "Wall of Flesh",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/wof", Language.GetTextValue($"NPCName.WallofFlesh"),
                 typeof(Main).GetField("hardMode", ToastyQoLUtils.UniversalBindingFlags), Weights.PostWallOfFlesh).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/queenSlime", "Queen Slime",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/queenSlime", Language.GetTextValue($"NPCName.QueenSlimeBoss"),
                 typeof(NPC).GetField("downedQueenSlime", ToastyQoLUtils.UniversalBindingFlags), Weights.PostQueenSlime).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/twins", "The Twin",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/twins", Language.GetTextValue($"Enemies.TheTwins"),
                 typeof(NPC).GetField("downedMechBoss2", ToastyQoLUtils.UniversalBindingFlags), Weights.PostTwins).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/destroyer", "The Destroyer",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/destroyer", Language.GetTextValue($"NPCName.TheDestroyer"),
                 typeof(NPC).GetField("downedMechBoss1", ToastyQoLUtils.UniversalBindingFlags), Weights.PostDestroyer).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/prime", "Skeletron Prime",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/prime", Language.GetTextValue($"NPCName.SkeletronPrime"),
                 typeof(NPC).GetField("downedMechBoss3", ToastyQoLUtils.UniversalBindingFlags), Weights.PostSkeletronPrime).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/plantera", "Plantera",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/plantera", Language.GetTextValue($"NPCName.Plantera"),
                 typeof(NPC).GetField("downedPlantBoss", ToastyQoLUtils.UniversalBindingFlags), Weights.PostPlantera).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/golem", "Golem",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/golem", Language.GetTextValue($"NPCName.Golem"),
                 typeof(NPC).GetField("downedGolemBoss", ToastyQoLUtils.UniversalBindingFlags), Weights.PostGolem).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/empress", "Empress of Light",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/empress", Language.GetTextValue($"NPCName.HallowBoss"),
                 typeof(NPC).GetField("downedEmpressOfLight", ToastyQoLUtils.UniversalBindingFlags), Weights.PostEmpressOfLight).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/fishron", "Duke Fishron",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/fishron", Language.GetTextValue($"NPCName.DukeFishron"),
                 typeof(NPC).GetField("downedFishron", ToastyQoLUtils.UniversalBindingFlags), Weights.PostDukeFishron).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/cultist", "Lunatic Cultist",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/cultist", Language.GetTextValue($"NPCName.CultistBoss"),
                 typeof(NPC).GetField("downedAncientCultist", ToastyQoLUtils.UniversalBindingFlags), Weights.PostLunaticCultist).Register();
 
-            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/moonlord", "Moon Lord",
+            new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/moonlord", Language.GetTextValue($"Enemies.MoonLord"),
                 typeof(NPC).GetField("downedMoonlord", ToastyQoLUtils.UniversalBindingFlags), Weights.PostMoonlord).Register();          
         }
 

@@ -71,7 +71,7 @@ namespace ToastyQoL.Content.UI.UIManagers
                 )
             };
 
-            TogglesPage uIManager = new(uIElements, PowerUIName, "Powers Toggles" /*Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.PowersUI")*/, ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/playerUIIcon", AssetRequestMode.ImmediateLoad).Value, 6f);
+            TogglesPage uIManager = new(uIElements, PowerUIName, "Mods.ToastyQoL.UI.UIButtons.PowersUI", ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/playerUIIcon", AssetRequestMode.ImmediateLoad).Value, 6f);
             uIManager.TryRegister();
         }
     }

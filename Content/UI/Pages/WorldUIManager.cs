@@ -207,7 +207,7 @@ namespace ToastyQoL.Content.UI.UIManagers
                 typeof(MapSystem).GetField("MapTeleport", ToastyQoLUtils.UniversalBindingFlags)),
             };
             ;
-            TogglesPage uIManager = new(uIElements, WorldUIName, "World Toggles" /*Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.WorldUI")*/, ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/worldUIIcon", AssetRequestMode.ImmediateLoad).Value, 7f);
+            TogglesPage uIManager = new(uIElements, WorldUIName, "Mods.ToastyQoL.UI.UIButtons.WorldUI", ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/worldUIIcon", AssetRequestMode.ImmediateLoad).Value, 7f);
             uIManager.TryRegister();
         }
     }

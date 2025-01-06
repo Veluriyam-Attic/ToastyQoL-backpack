@@ -1,0 +1,9 @@
+Eowboc: 世吞或克脑
+ProgressionInformation: 这是{0}后的物品, 你可能不该使用。
+
+# short names for existing bosses.
+# some full names are not suitable in the progression tooltip. Like, we don't say "This is post The Destroyer", it should be just "Destroyer"
+# The situation may vary in different languages. If new short names in other languages are added here and used in Core\Systems\TieringSystem.cs, please keep the existing full names in other languages.
+# e.g., you make a short name for the Twins in your language, you may write "TwinsShort: BlahBlah" in your language, and you should also write "TwinsShort: "{$Enemies.TheTwins}"" in other languages.
+DestroyerShort: "{$NPCName.TheDestroyer}"
+CultistShort: 教徒

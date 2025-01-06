@@ -5,6 +5,14 @@ DoubleShroom: {
 		Trippier (Hage)
 		This gets replaced.
 		'''
+	OtherTooltip:{
+		1: 
+		'''
+		在屏幕的各个方向制造8个幻影
+		可能会对眼睛造成伤害，请谨慎使用。
+		'''
+		2: 您配吗？
+	}
 }
 
 NostShroom: {
@@ -16,9 +24,9 @@ NostShroom: {
 		'''
 
 	OtherTooltip: {
-		// 1: Creates 4 copies of things in various screen positions
-		// 2: May be hard on the eyes, be cautious with use.
-		// Info: People who have nohit SCal with this:
+		1: 在屏幕的各个方向制造4个幻影
+		2: 可能会对眼睛造成伤害，请谨慎使用。
+		Info: 以下是使用这个成功无伤至尊灾厄的名单：
 	}
 }
 
@@ -41,16 +49,17 @@ SacrificialDagger: {
 }
 
 RightClickToTen: <right>增加召唤数，最多为10
-IntantlySummons: 立即召唤
-// SpawnCount: Spawn Count
+InstantlySummons: 立即召唤
+SpawnCountTooltip: 召唤计数：{0}
+SpawnCountChat: "{0}召唤计数：{1}"
 
 BetsySpawner: {
 	DisplayName: 双足翼龙召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.DD2Betsy}
+		{$InstantlySummons}{$NPCName.DD2Betsy}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -58,9 +67,9 @@ DestSpawner: {
 	DisplayName: 毁灭者召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.TheDestroyer}
+		{$InstantlySummons}{$NPCName.TheDestroyer}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -68,9 +77,9 @@ DFSpawner: {
 	DisplayName: 猪龙鱼公爵召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.DukeFishron}
+		{$InstantlySummons}{$NPCName.DukeFishron}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -78,9 +87,9 @@ EoLSpawner: {
 	DisplayName: 光之女皇召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.HallowBoss}
+		{$InstantlySummons}{$NPCName.HallowBoss}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -88,9 +97,9 @@ GolemSpawner: {
 	DisplayName: 石巨人召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.Golem}
+		{$InstantlySummons}{$NPCName.Golem}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -98,9 +107,9 @@ LCSpawner: {
 	DisplayName: 拜月教徒召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.CultistBoss}
+		{$InstantlySummons}{$NPCName.CultistBoss}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -108,9 +117,9 @@ MLSpawner: {
 	DisplayName: 月亮领主召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$Enemies.MoonLord}
+		{$InstantlySummons}{$Enemies.MoonLord}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -118,9 +127,9 @@ PlantSpawner: {
 	DisplayName: 世纪之花召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.Plantera}
+		{$InstantlySummons}{$NPCName.Plantera}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -128,9 +137,9 @@ QSSpawner: {
 	DisplayName: 史莱姆皇后召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.QueenSlimeBoss}
+		{$InstantlySummons}{$NPCName.QueenSlimeBoss}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -138,9 +147,9 @@ SkPrSpawner: {
 	DisplayName: 机械骷髅王召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.SkeletronPrime}
+		{$InstantlySummons}{$NPCName.SkeletronPrime}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -148,9 +157,9 @@ TwinsSpawner: {
 	DisplayName: 双子魔眼召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$Enemies.TheTwins}
+		{$InstantlySummons}{$Enemies.TheTwins}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -158,9 +167,9 @@ BoCSpawner: {
 	DisplayName: 克苏鲁之脑召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.BrainofCthulhu}
+		{$InstantlySummons}{$NPCName.BrainofCthulhu}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -168,9 +177,9 @@ DCSpawner: {
 	DisplayName: 独眼巨鹿召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.Deerclops}
+		{$InstantlySummons}{$NPCName.Deerclops}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -178,9 +187,9 @@ EOCSpawner: {
 	DisplayName: 克苏鲁之眼召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.EyeofCthulhu}
+		{$InstantlySummons}{$NPCName.EyeofCthulhu}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -188,9 +197,9 @@ EoWSpawner: {
 	DisplayName: 世界吞噬者召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.EaterofWorldsHead}
+		{$InstantlySummons}{$NPCName.EaterofWorldsHead}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -198,9 +207,9 @@ KSSpawner: {
 	DisplayName: 史莱姆王召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.KingSlime}
+		{$InstantlySummons}{$NPCName.KingSlime}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -208,9 +217,9 @@ QBSpawner: {
 	DisplayName: 蜂后召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.QueenBee}
+		{$InstantlySummons}{$NPCName.QueenBee}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -218,9 +227,9 @@ SkeletronSpawner: {
 	DisplayName: 骷髅王召唤器
 	Tooltip:
 		'''
-		{$IntantlySummons}{$NPCName.SkeletronHead}
+		{$InstantlySummons}{$NPCName.SkeletronHead}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 
@@ -228,9 +237,9 @@ WoFSpawner: {
 	DisplayName: 血肉墙召唤器
 	Tooltip:
 		'''
-		在你的左侧{$IntantlySummons}{$NPCName.WallofFlesh}
+		在你的左侧{$InstantlySummons}{$NPCName.WallofFlesh}
 		{$RightClickToTen}
-		Spawn Count
+		[Spawn Count]
 		'''
 }
 

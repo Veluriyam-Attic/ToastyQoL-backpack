@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace ToastyQoL.Core.Systems
@@ -13,16 +14,18 @@ namespace ToastyQoL.Core.Systems
         {
             public Func<bool> PastTierCheck;
 
-            public string BossName;
+            //public string BossName;
+            private readonly string _bossKey;
+            public string BossName { get { return Language.GetTextValue(_bossKey); } }
 
             public List<int> AssosiatedItemTypes;
 
             public float Weight;
 
-            public BossLockInformation(Func<bool> pastTierCheck, string bossName, List<int> assosiatedItemTypes, float weight = 1f)
+            public BossLockInformation(Func<bool> pastTierCheck, string bossKey, List<int> assosiatedItemTypes, float weight = 1f)
             {
                 PastTierCheck = pastTierCheck;
-                BossName = bossName;
+                _bossKey = bossKey;
                 AssosiatedItemTypes = assosiatedItemTypes;
                 Weight = weight;
             }
@@ -120,7 +123,7 @@ namespace ToastyQoL.Core.Systems
             ItemsTieringInformation = new()
             {
                 new BossLockInformation(() => NPC.downedSlimeKing,
-                    "King Slime",
+                    $"NPCName.KingSlime",
                     new()
                     {
 
@@ -130,7 +133,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                 new BossLockInformation(() => NPC.downedBoss1,
-                    "Eye of Cthulhu",
+                    $"NPCName.EyeofCthulhu",
                     new()
                     {
                         //Vanilla
@@ -139,7 +142,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                  new BossLockInformation(() => SavingSystem.DownedBrain && SavingSystem.DownedEater,
-                    "EoW/BoC",
+                    $"Mods.ToastyQoL.Tiering.Eowboc",
                     new()
                     {
                         //Vanilla
@@ -153,7 +156,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                   new BossLockInformation(() => NPC.downedQueenBee,
-                    "Queen Bee",
+                    $"NPCName.QueenBee",
                     new()
                     {
                         //Vanilla
@@ -171,7 +174,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                   new BossLockInformation(() => NPC.downedDeerclops,
-                    "Deerclops",
+                    $"NPCName.Deerclops",
                     new()
                     {
                         ItemID.BoneHelm,
@@ -185,7 +188,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                   new BossLockInformation(() => NPC.downedBoss3,
-                    "Skeletron",
+                    $"NPCName.SkeletronHead",
                     new()
                     {
                         //Vanilla
@@ -196,7 +199,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                   new BossLockInformation(() => Main.hardMode,
-                    "Wall of Flesh",
+                    $"NPCName.WallofFlesh",
                     new()
                     {
                         //Vanilla
@@ -214,7 +217,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                   new BossLockInformation(() => NPC.downedQueenSlime,
-                    "Queen Slime",
+                    $"NPCName.QueenSlimeBoss",
                     new()
                     {
                         ItemID.CrystalNinjaHelmet,
@@ -227,14 +230,14 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                    new BossLockInformation(() => NPC.downedMechBoss1,
-                    "Destroyer",
+                    $"Mods.ToastyQoL.Tiering.DestroyerShort",
                     new()
                     {
                         ItemID.Megashark
                     }),
 
                    new BossLockInformation(() => NPC.downedMechBoss2,
-                    "Twins",
+                    "Enemies.TheTwins",
                     new()
                     {
                         ItemID.MagicalHarp,
@@ -243,14 +246,14 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                    new BossLockInformation(() => NPC.downedMechBoss3,
-                    "Skeletron Prime",
+                    $"NPCName.SkeletronPrime",
                     new()
                     {
                         ItemID.Flamethrower
                     }),
 
                    new BossLockInformation(() => NPC.downedPlantBoss,
-                    "Plantera",
+                    $"NPCName.Plantera",
                     new()
                     {
                         //Vanilla
@@ -271,7 +274,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                    new BossLockInformation(() => NPC.downedGolemBoss,
-                    "Golem",
+                    $"NPCName.Golem",
                     new()
                     {
                         //Vanilla
@@ -292,7 +295,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                    new BossLockInformation(() => NPC.downedEmpressOfLight,
-                    "Empress of Light",
+                    $"NPCName.HallowBoss",
                     new()
                     {
                         ItemID.PiercingStarlight,
@@ -306,7 +309,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                    new BossLockInformation(() => NPC.downedFishron,
-                    "Duke Fishron",
+                    $"NPCName.DukeFishron",
                     new()
                     {
                         //Vanilla
@@ -320,7 +323,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                    new BossLockInformation(() => NPC.downedAncientCultist,
-                    "Lunatic Cultist",
+                    $"Mods.ToastyQoL.Tiering.CultistShort",
                     new()
                     {
                         //Vanilla
@@ -336,7 +339,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                    new BossLockInformation(() => NPC.downedMoonlord,
-                    "Moonlord",
+                    $"Enemies.MoonLord",
                     new()
                     {
                         //Vanilla
@@ -363,7 +366,7 @@ namespace ToastyQoL.Core.Systems
             PotionsTieringInformation = new()
             {
                 new BossLockInformation(() => NPC.downedQueenBee,
-                    "Queen Bee",
+                    $"NPCName.QueenBee",
                     new()
                     {
                         ItemID.FlaskofFire,

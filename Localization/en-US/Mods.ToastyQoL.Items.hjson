@@ -5,6 +5,14 @@ DoubleShroom: {
 		Trippier (Hage)
 		This gets replaced.
 		'''
+	OtherTooltip:{
+		1: 
+		'''
+		Creates 8 copies of things in various screen positions
+		May be hard on the eyes, be cautious with use.
+		'''
+		2: Are you worthy?
+	}
 }
 
 NostShroom: {
@@ -14,7 +22,8 @@ NostShroom: {
 		The original
 		This gets replaced.
 		'''
-	OtherTooltip:{
+
+	OtherTooltip: {
 		1: Creates 4 copies of things in various screen positions
 		2: May be hard on the eyes, be cautious with use.
 		Info: People who have nohit SCal with this:
@@ -40,16 +49,17 @@ SacrificialDagger: {
 }
 
 RightClickToTen: <right> to increase spawn count up to 10
-IntantlySummons: Instantly summons
-SpawnCount: Spawn Count
+InstantlySummons: Instantly summons
+SpawnCountTooltip: Spawn Count: {0}
+SpawnCountChat: "{0} Spawn Count: {1}"
 
 BetsySpawner: {
 	DisplayName: Betsy Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.DD2Betsy}
+		{$InstantlySummons} {$NPCName.DD2Betsy}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -57,9 +67,9 @@ DestSpawner: {
 	DisplayName: Destroyer Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.TheDestroyer}
+		{$InstantlySummons} {$NPCName.TheDestroyer}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -67,9 +77,9 @@ DFSpawner: {
 	DisplayName: Duke Fishron Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.DukeFishron}
+		{$InstantlySummons} {$NPCName.DukeFishron}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -77,9 +87,9 @@ EoLSpawner: {
 	DisplayName: Empress Of Light Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.HallowBoss}
+		{$InstantlySummons} {$NPCName.HallowBoss}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -87,9 +97,9 @@ GolemSpawner: {
 	DisplayName: Golem Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.Golem}
+		{$InstantlySummons} {$NPCName.Golem}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -97,9 +107,9 @@ LCSpawner: {
 	DisplayName: Lunatic Cultist Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.CultistBoss}
+		{$InstantlySummons} {$NPCName.CultistBoss}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -107,9 +117,9 @@ MLSpawner: {
 	DisplayName: Moon Lord Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$Enemies.MoonLord}
+		{$InstantlySummons} {$Enemies.MoonLord}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -117,9 +127,9 @@ PlantSpawner: {
 	DisplayName: Plantera Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.Plantera}
+		{$InstantlySummons} {$NPCName.Plantera}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -127,9 +137,9 @@ QSSpawner: {
 	DisplayName: Queen Slime Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.QueenSlimeBoss}
+		{$InstantlySummons} {$NPCName.QueenSlimeBoss}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -137,9 +147,9 @@ SkPrSpawner: {
 	DisplayName: Skeletron Prime Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.SkeletronPrime}
+		{$InstantlySummons} {$NPCName.SkeletronPrime}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -147,9 +157,9 @@ TwinsSpawner: {
 	DisplayName: Twins Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$Enemies.TheTwins}
+		{$InstantlySummons} {$Enemies.TheTwins}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -157,9 +167,9 @@ BoCSpawner: {
 	DisplayName: Brain Of Cthulhu Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.BrainofCthulhu}
+		{$InstantlySummons} {$NPCName.BrainofCthulhu}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -167,9 +177,9 @@ DCSpawner: {
 	DisplayName: Deerclops Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.Deerclops}
+		{$InstantlySummons} {$NPCName.Deerclops}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -177,9 +187,9 @@ EOCSpawner: {
 	DisplayName: Eye Of Cthulhu Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.EyeofCthulhu}
+		{$InstantlySummons} {$NPCName.EyeofCthulhu}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -187,9 +197,9 @@ EoWSpawner: {
 	DisplayName: Eater Of Worlds Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.EaterofWorldsHead}
+		{$InstantlySummons} {$NPCName.EaterofWorldsHead}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -197,9 +207,9 @@ KSSpawner: {
 	DisplayName: King Slime Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.KingSlime}
+		{$InstantlySummons} {$NPCName.KingSlime}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -207,9 +217,9 @@ QBSpawner: {
 	DisplayName: Queen Bee Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.QueenBee}
+		{$InstantlySummons} {$NPCName.QueenBee}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -217,9 +227,9 @@ SkeletronSpawner: {
 	DisplayName: Skeletron Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.SkeletronHead}
+		{$InstantlySummons} {$NPCName.SkeletronHead}
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
@@ -227,9 +237,9 @@ WoFSpawner: {
 	DisplayName: Wall Of Flesh Spawner
 	Tooltip:
 		'''
-		{$IntantlySummons} {$NPCName.WallofFlesh} on your left.
+		{$InstantlySummons} {$NPCName.WallofFlesh} on your left.
 		{$RightClickToTen}
-		{$SpawnCount}
+		[Spawn Count]
 		'''
 }
 
