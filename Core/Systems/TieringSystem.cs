@@ -230,7 +230,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                    new BossLockInformation(() => NPC.downedMechBoss1,
-                    $"NPCName.TheDestroyer",
+                    $"Mods.ToastyQoL.Tiering.DestroyerShort",
                     new()
                     {
                         ItemID.Megashark
@@ -323,7 +323,7 @@ namespace ToastyQoL.Core.Systems
                     }),
 
                    new BossLockInformation(() => NPC.downedAncientCultist,
-                    $"NPCName.CultistBoss",
+                    $"Mods.ToastyQoL.Tiering.CultistShort",
                     new()
                     {
                         //Vanilla
