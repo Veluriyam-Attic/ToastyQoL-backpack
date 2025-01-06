@@ -14,6 +14,7 @@ namespace ToastyQoL.Content.UI.UIManagers
     public static partial class UIManagerAutoloader
     {
         public const string MiscUIName = "MiscManager";
+        public static string miscToggles = GameCulture.FromCultureName(GameCulture.CultureName.Chinese).IsActive? "杂项设置":"Misc Toggles";
 
         public static void InitializeMisc()
         {
@@ -111,7 +112,7 @@ namespace ToastyQoL.Content.UI.UIManagers
                 typeof(Toggles).GetField("BossDPS", ToastyQoLUtils.UniversalBindingFlags)),
             };
 
-            TogglesPage uIManager = new(uIElements, MiscUIName, "Misc Toggles" /*Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.MiscUI")*/, ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/settingsUIIcon", AssetRequestMode.ImmediateLoad).Value, 5f);
+            TogglesPage uIManager = new(uIElements, MiscUIName, "Mods.ToastyQoL.UI.UIButtons.MiscUI" /*Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.MiscUI")*/, ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/settingsUIIcon", AssetRequestMode.ImmediateLoad).Value, 5f);
             uIManager.TryRegister();
         }   
     }

@@ -1,5 +1,6 @@
 UIButtons: {
 	OpenUI: "[c/ffcc44:点击以打开UI！]"
+	SetSpawn: 设置世界出生点
 	WorldUI: 世界设置
 	MiscUI: 杂项设置
 	PowersUI: 能力设置
