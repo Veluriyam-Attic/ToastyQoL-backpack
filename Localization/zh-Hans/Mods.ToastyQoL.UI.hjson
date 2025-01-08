@@ -1,11 +1,12 @@
 UIButtons: {
 	OpenUI: "[c/ffcc44:点击以打开UI！]"
+	SetSpawn: 设置世界出生点
 	WorldUI: 世界设置
 	MiscUI: 杂项设置
 	PowersUI: 能力设置
 	LocksUI: 时期锁
-	BossUI: Boss 设置
-	PotionsUI: 切换药水
+	BossUI: 设置Boss时期
+	PotionsUI: 设置药水
 	Enabled: "[c/44de5a:已启用]"
 	Disabled: "[{0}已禁用]"
 
@@ -20,12 +21,12 @@ UIButtons: {
 
 Toggles: {
 	Gravestones: {
-		Name: 切换墓碑生成
+		Name: 设置墓碑生成
 		Description: 开启以允许生成墓碑
 	}
 
 	LightHack: {
-		Name: 切换全局光照
+		Name: 设置全局光照
 		Description: 将全局光照强度设为
 		Disable: 关闭全局光照
 		Disable2: 已关闭
@@ -34,30 +35,30 @@ Toggles: {
 
 	Shrooms: {
 		Normal: {
-			Name: 切换蘑菇增伤
-			Description: 切换蘑菇系列是否提供额外伤害加成
+			Name: 设置蘑菇增伤
+			Description: 设置蘑菇系列是否提供额外伤害加成
 		}
 
 		Full: {
-			Name: 切换完整蘑菇
+			Name: 设置完整蘑菇
 			Description: 这种独特的蘑菇效果能制造][c/ffcc44:几乎一切][c/ffcc44:的幻影
-			RGBName: 切换完整蘑菇RGB
+			RGBName: 设置完整蘑菇RGB
 			RGBDescription: 为蘑菇添加RGB着色器效果
 		}
 	}
 
 	MNL: {
-		Name: 切换击杀时间显示
+		Name: 击杀时间显示
 		Description: 在聊天栏显示你与无伤规则中的最低击杀时间之间的距离
 	}
 
 	Sass: {
-		Name: 切换羞辱模式
+		Name: 羞辱模式
 		Description: 当你死亡时在聊天栏显示一条信息来羞辱你
 	}
 
 	DPS: {
-		Name: 切换每秒伤害统计
+		Name: 每秒伤害统计
 		Description: 在聊天栏显示你对Boss的平均每秒伤害
 	}
 
@@ -68,24 +69,24 @@ Toggles: {
 		}
 
 		EnemySpawns: {
-			Name: 切换敌人生成
+			Name: 设置敌人生成
 			Description: 允许或禁止敌怪生成
 		}
 
 		Time: {
 			TimeFlow: {
-				Name: 切换时间流逝
+				Name: 设置时间流逝
 				Description: 允许或禁止时间流逝
 			}
 
 			Name: 切换日夜
 			Description: 在白天和夜晚之间切换
-			TimeDay: 已切换到白天
-			TimeNight: 已切换到夜晚
+			TimeDay: 已设置为白天
+			TimeNight: 已设置为夜晚
 		}
 
 		ToggleRain: {
-			Name: 切换降雨
+			Name: 设置降雨
 			Description: 开启一场暴风雨
 		}
 
@@ -95,40 +96,40 @@ Toggles: {
 		}
 
 		WorldDifficulty: {
-			Name: 切换世界难度
+			Name: 设置世界难度
 
 			Difficulty: {
 				SetTo: 将世界难度设置为{0}
 
 				Journey: {
 					Name: 旅途模式
-					Enable: 当前为旅途模式
+					Enable: 已设置为旅途模式
 				}
 
 				Normal: {
 					Name: 经典模式
-					Enable: 当前为经典模式
+					Enable: 已设置为经典模式
 				}
 
 				Expert: {
 					Name: 专家模式
-					Enable: 当前为专家模式
+					Enable: 已设置为专家模式
 				}
 
 				Master: {
 					Name: 大师模式
-					Enable: 当前为大师模式
+					Enable: 已设置为大师模式
 				}
 			}
 		}
 
 		BiomeFountains: {
-			Name: 切换生物群系喷泉
+			Name: 设置生物群系喷泉
 			Description: 击败蜂后之后，喷泉会改变生物群系
 		}
 
 		PlayerDifficulty: {
-			Name: 切换玩家难度
+			Name: 设置玩家难度
 
 			Difficulty: {
 				SetTo: 将玩家难度设置为{0}
@@ -151,39 +152,39 @@ Toggles: {
 		}
 
 		MapTeleporting: {
-			Name: 切换地图传送
+			Name: 设置地图传送
 			Description: 允许或禁止在全屏地图上右键以全图传送
 		}
 	}
 
 	PowersUI: {
 		Godmode: {
-			Name: 切换无敌模式
+			Name: 无敌模式
 			Description: 使你无法受到伤害
 		}
 
 		InstantDeath: {
-			Name: 切换受击即死
+			Name: 受击即死
 			Description: 使你在受到任何伤害时立刻死亡
 		}
 
 		InfiniteFlight: {
-			Name: 切换无限飞行
+			Name: 无限飞行
 			Description: 你永远不会耗尽飞行时间
 		}
 
 		InfinitePotions: {
-			Name: 切换无限药水
+			Name: 无限药水
 			Description: 药水持续时间变为无限
 		}
 
 		InfiniteAmmo: {
-			Name: 切换无限弹药
+			Name: 无限弹药
 			Description: 你不会消耗任何弹药
 		}
 
 		InfiniteConsumables: {
-			Name: 切换无限消耗品
+			Name: 无限消耗品
 			Description: 你使用消耗品时不会减少它们的数量
 		}
 	}
@@ -191,24 +192,24 @@ Toggles: {
 	LocksUI: {
 		Potion: {
 			Tooltips: {
-				Name: 切换药水时期提示
+				Name: 药水时期提示
 				Description: 为超时期药水添加一条相应的物品说明
 			}
 
 			Locks: {
-				Name: 切换药水锁
+				Name: 药水锁
 				Description: 阻止你饮下超时期药水
 			}
 		}
 
 		Item: {
 			Tooltips: {
-				Name: 切换物品时期提示
+				Name: 物品时期提示
 				Description: 为一些超时期物品添加一条相应的物品说明
 			}
 
 			Locks: {
-				Name: 切换物品锁
+				Name: 物品锁
 				Description: 阻止你使用超时期物品
 			}
 		}
@@ -246,240 +247,5 @@ Potions: {
 	Close: {
 		Potions: "[c/de4444:清除药水]"
 		Menu: "[c/de4444:关闭窗口]"
-	}
-
-	AmmoRes: {
-		Name: Ammo Reservation
-		// Description: 20% chance to not consume ammo
-	}
-
-	Archery: {
-		// Name: Archery
-		// Description: 10% increased bow damage and 20% increased arrow speed
-	}
-
-	Battle: {
-		// Name: Battle
-		// Description: Increases enemy spawn rate
-	}
-
-	Builder: {
-		// Name: Builder
-		// Description: Increases placement speed and range
-	}
-
-	Calming: {
-		// Name: Calming
-		// Description: Decreases enemy spawn rate
-	}
-
-	Crate: {
-		// Name: Crate
-		// Description: Increases chance to get a crate
-	}
-
-	Dangersense: {
-		// Name: Dangersense
-		// Description: Allows you to see nearby danger sources
-	}
-
-	Endurance: {
-		// Name: Endurance
-		// Description: Reduces damage taken by 10%
-	}
-
-	ExquisiteStuff: {
-		// Name: Exquisitely Stuffed
-		// Description: Major improvements to all stats
-	}
-
-	Featherfall: {
-		// Name: Featherfall
-		// Description: Slows falling speed
-	}
-
-	Fishing: {
-		// Name: Fishing
-		// Description: Increases fishing power by 15
-	}
-
-	FlaskCursed: {
-		// Name: Flask of Cursed Flames
-		// Description: Weapon Imbue Cursed Flames
-	}
-
-	FlaskFire: {
-		// Name: Flask of Fire
-		// Description: Weapon Imbue Fire
-	}
-
-	FlaskGold: {
-		// Name: Flask of Gold
-		// Description: Weapon Imbue Gold
-	}
-
-	FlaskIchor: {
-		// Name: Flask of Ichor
-		// Description: Weapon Imbue Ichor
-	}
-
-	FlaskNanites: {
-		// Name: Flask of Nanites
-		// Description: Weapon Imbue Nanites
-	}
-
-	FlaskParty: {
-		// Name: Flask of Party
-		// Description: Weapon Imbue Party
-	}
-
-	FlaskPoison: {
-		// Name: Flask of Poison
-		// Description: Weapon Imbue Poison
-	}
-
-	FlaskVenom: {
-		// Name: Flask of Venom
-		// Description: Weapon Imbue Venom
-	}
-
-	Flipper: {
-		// Name: Flipper
-		// Description: Lets you move swiftly in liquids
-	}
-
-	Gills: {
-		// Name: Gills
-		// Description: Breathe water instead of air
-	}
-
-	Gravitation: {
-		// Name: Gravitation
-		// Description: Allows the control of gravity
-	}
-
-	GreatLuck: {
-		// Name: Greater Luck
-		// Description: Increases the Luck of the user
-	}
-
-	Heartreach: {
-		// Name: Heartreach
-		// Description: Increases pickup range for life hearts
-	}
-
-	Hunter: {
-		// Name: Hunter
-		// Description: Shows the location of enemies
-	}
-
-	Inferno: {
-		// Name: Inferno
-		// Description: Ignites nearby enemies
-	}
-
-	Invisibility: {
-		// Name: Invisibility
-		// Description: Grants invisibility and lowers the spawn rate of enemies
-	}
-
-	Ironskin: {
-		// Name: Ironskin
-		// Description: Increases defense by 8
-	}
-
-	Lifeforce: {
-		// Name: Lifeforce
-		// Description: Increases max life by 20%
-	}
-
-	MagicPower: {
-		// Name: Magic Power
-		// Description: 20% increased magic damage
-	}
-
-	ManaRegen: {
-		// Name: Mana Regeneration
-		// Description: Increased mana regeneration
-	}
-
-	Mining: {
-		// Name: Mining
-		// Description: Increases mining speed by 25%
-	}
-
-	NightOwl: {
-		// Name: Night Owl
-		// Description: Increases night vision
-	}
-
-	ObsidianSkin: {
-		// Name: Obsidian Skin
-		// Description: Provides immunity to lava
-	}
-
-	Rage: {
-		// Name: Rage
-		// Description: Increases critical chance by 10%
-	}
-
-	Regen: {
-		// Name: Regeneration
-		// Description: Provides life regeneration
-	}
-
-	Shine: {
-		// Name: Shine
-		// Description: Emits an aura of light
-	}
-
-	Sonar: {
-		// Name: Sonar
-		// Description: Detects hooked fish
-	}
-
-	Spelunker: {
-		// Name: Spelunker
-		// Description: Shows the location of treasure and ore
-	}
-
-	Summoning: {
-		// Name: Summoning
-		// Description: Increases your max number of minions by 1
-	}
-
-	Swiftness: {
-		// Name: Swiftness
-		// Description: 25% increased movement speed
-	}
-
-	Thorns: {
-		// Name: Thorns
-		// Description: Attackers also take damage
-	}
-
-	Tipsy: {
-		// Name: Tipsy
-		// Description: Increased melee abilities, lowered defense
-	}
-
-	Titan: {
-		// Name: Titan
-		// Description: Increases knockback
-	}
-
-	Warmth: {
-		// Name: Warmth
-		// Description: Reduces damage from cold sources
-	}
-
-	WaterWalking: {
-		// Name: Water Walking
-		// Description: Allows the ability to walk on water
-	}
-
-	Wrath: {
-		// Name: Wrath
-		// Description: Increases damage by 10%
 	}
 }

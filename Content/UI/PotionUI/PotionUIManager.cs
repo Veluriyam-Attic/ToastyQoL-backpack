@@ -76,145 +76,145 @@ namespace ToastyQoL.Content.UI.PotionUI
             PotionMod vanilla = new("Terraria", "ToastyQoL/Content/UI/PotionUI/Textures/terrariaIcon");
             ModsRelatedPotions.Add(vanilla, new List<PotionElement>() 
             {
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.AmmoRes.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.AmmoRes.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/ammoReservation", BuffID.AmmoReservation, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.AmmoReservationPotion"), Language.GetTextValue($"ItemTooltip.AmmoReservationPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/ammoReservation", BuffID.AmmoReservation, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Archery.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Archery.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/archery", BuffID.Archery, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.ArcheryPotion"), Language.GetTextValue($"ItemTooltip.ArcheryPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/archery", BuffID.Archery, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Battle.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Battle.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/battle", BuffID.Battle, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.BattlePotion"), Language.GetTextValue($"ItemTooltip.BattlePotion"), "ToastyQoL/Content/UI/PotionUI/Textures/battle", BuffID.Battle, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Builder.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Builder.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/builder", BuffID.Builder, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.BuilderPotion"), Language.GetTextValue($"ItemTooltip.BuilderPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/builder", BuffID.Builder, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Calming.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Calming.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/calming", BuffID.Calm, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.CalmingPotion"), Language.GetTextValue($"ItemTooltip.CalmingPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/calming", BuffID.Calm, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Crate.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Crate.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/crate", BuffID.Crate, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.CratePotion"), Language.GetTextValue($"ItemTooltip.CratePotion"), "ToastyQoL/Content/UI/PotionUI/Textures/crate", BuffID.Crate, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Dangersense.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Dangersense.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/dangersense", BuffID.Dangersense, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.TrapsightPotion"), Language.GetTextValue($"ItemTooltip.TrapsightPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/dangersense", BuffID.Dangersense, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Endurance.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Endurance.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/endurance", BuffID.Endurance, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.EndurancePotion"), Language.GetTextValue($"ItemTooltip.EndurancePotion"), "ToastyQoL/Content/UI/PotionUI/Textures/endurance", BuffID.Endurance, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ExquisiteStuff.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ExquisiteStuff.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/goldenDelight", BuffID.WellFed3, () => true,
+                new PotionElement(Language.GetTextValue($"BuffName.WellFed3"), Language.GetTextValue($"BuffDescription.WellFed3"), "ToastyQoL/Content/UI/PotionUI/Textures/goldenDelight", BuffID.WellFed3, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Featherfall.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Featherfall.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/featherfall", BuffID.Featherfall, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.FeatherfallPotion"), Language.GetTextValue($"ItemTooltip.FeatherfallPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/featherfall", BuffID.Featherfall, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Fishing.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Fishing.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/fishing", BuffID.Fishing, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.FishingPotion"), Language.GetTextValue($"ItemTooltip.FishingPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/fishing", BuffID.Fishing, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskCursed.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskCursed.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfCursedFlames", BuffID.WeaponImbueCursedFlames, () => Main.hardMode,
+                new PotionElement(Language.GetTextValue($"ItemName.FlaskofCursedFlames"), Language.GetTextValue($"ItemTooltip.FlaskofCursedFlames"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfCursedFlames", BuffID.WeaponImbueCursedFlames, () => Main.hardMode,
                 Weights.PostWallOfFlesh),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskFire.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskFire.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfFire", BuffID.WeaponImbueFire, () => NPC.downedQueenBee,
+                new PotionElement(Language.GetTextValue($"ItemName.FlaskofFire"), Language.GetTextValue($"ItemTooltip.FlaskofFire"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfFire", BuffID.WeaponImbueFire, () => NPC.downedQueenBee,
                 Weights.PostQueenBee),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskGold.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskGold.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfGold", BuffID.WeaponImbueGold, () => Main.hardMode,
+                new PotionElement(Language.GetTextValue($"ItemName.FlaskofGold"), Language.GetTextValue($"ItemTooltip.FlaskofGold"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfGold", BuffID.WeaponImbueGold, () => Main.hardMode,
                 Weights.PostWallOfFlesh),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskIchor.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskIchor.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfIchor", BuffID.WeaponImbueIchor, () => Main.hardMode,
+                new PotionElement(Language.GetTextValue($"ItemName.FlaskofIchor"), Language.GetTextValue($"ItemTooltip.FlaskofIchor"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfIchor", BuffID.WeaponImbueIchor, () => Main.hardMode,
                 Weights.PostWallOfFlesh),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskNanites.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskNanites.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfNanites", BuffID.WeaponImbueNanites, () => NPC.downedPlantBoss,
+                new PotionElement(Language.GetTextValue($"ItemName.FlaskofNanites"), Language.GetTextValue($"ItemTooltip.FlaskofNanites"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfNanites", BuffID.WeaponImbueNanites, () => NPC.downedPlantBoss,
                 Weights.PostPlantera),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskParty.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskParty.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfParty", BuffID.WeaponImbueConfetti, () => NPC.downedQueenBee,
+                new PotionElement(Language.GetTextValue($"ItemName.FlaskofParty"), Language.GetTextValue($"ItemTooltip.FlaskofParty"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfParty", BuffID.WeaponImbueConfetti, () => NPC.downedQueenBee,
                 Weights.PostQueenBee),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskPoison.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskPoison.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfPoison", BuffID.WeaponImbuePoison, () => NPC.downedQueenBee,
+                new PotionElement(Language.GetTextValue($"ItemName.FlaskofPoison"), Language.GetTextValue($"ItemTooltip.FlaskofPoison"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfPoison", BuffID.WeaponImbuePoison, () => NPC.downedQueenBee,
                 Weights.PostQueenBee),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskVenom.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.FlaskVenom.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfVenom", BuffID.WeaponImbueVenom, () => NPC.downedPlantBoss,
+                new PotionElement(Language.GetTextValue($"ItemName.FlaskofVenom"), Language.GetTextValue($"ItemTooltip.FlaskofVenom"), "ToastyQoL/Content/UI/PotionUI/Textures/flaskOfVenom", BuffID.WeaponImbueVenom, () => NPC.downedPlantBoss,
                 Weights.PostPlantera),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Flipper.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Flipper.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/flipper", BuffID.Flipper, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.FlipperPotion"), Language.GetTextValue($"ItemTooltip.FlipperPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/flipper", BuffID.Flipper, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Gills.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Gills.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/gills", BuffID.Gills, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.GillsPotion"), Language.GetTextValue($"ItemTooltip.GillsPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/gills", BuffID.Gills, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Gravitation.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Gravitation.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/gravitation", BuffID.Gravitation, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.GravitationPotion"), Language.GetTextValue($"ItemTooltip.GravitationPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/gravitation", BuffID.Gravitation, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.GreatLuck.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.GreatLuck.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/greaterLuck", BuffID.Lucky, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.LuckPotionGreater"), Language.GetTextValue($"ItemTooltip.LuckPotionGreater"), "ToastyQoL/Content/UI/PotionUI/Textures/greaterLuck", BuffID.Lucky, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Heartreach.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Heartreach.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/heartreach", BuffID.Heartreach, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.HeartreachPotion"), Language.GetTextValue($"ItemTooltip.HeartreachPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/heartreach", BuffID.Heartreach, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Hunter.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Hunter.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/hunter", BuffID.Hunter, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.HunterPotion"), Language.GetTextValue($"ItemTooltip.HunterPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/hunter", BuffID.Hunter, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Inferno.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Inferno.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/inferno", BuffID.Inferno, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.InfernoPotion"), Language.GetTextValue($"ItemTooltip.InfernoPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/inferno", BuffID.Inferno, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Invisibility.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Invisibility.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/invisibility", BuffID.Invisibility, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.InvisibilityPotion"), Language.GetTextValue($"ItemTooltip.InvisibilityPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/invisibility", BuffID.Invisibility, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Ironskin.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Ironskin.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/ironskin", BuffID.Ironskin, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.IronskinPotion"), Language.GetTextValue($"ItemTooltip.IronskinPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/ironskin", BuffID.Ironskin, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Lifeforce.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Lifeforce.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/lifeforce", BuffID.Lifeforce, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.LifeforcePotion"), Language.GetTextValue($"ItemTooltip.LifeforcePotion"), "ToastyQoL/Content/UI/PotionUI/Textures/lifeforce", BuffID.Lifeforce, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.MagicPower.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.MagicPower.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/magicPower", BuffID.MagicPower, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.MagicPowerPotion"), Language.GetTextValue($"ItemTooltip.MagicPowerPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/magicPower", BuffID.MagicPower, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ManaRegen.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ManaRegen.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/manaRegeneration", BuffID.ManaRegeneration, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.ManaRegenerationPotion"), Language.GetTextValue($"ItemTooltip.ManaRegenerationPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/manaRegeneration", BuffID.ManaRegeneration, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Mining.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Mining.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/mining", BuffID.Mining, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.MiningPotion"), Language.GetTextValue($"ItemTooltip.MiningPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/mining", BuffID.Mining, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.NightOwl.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.NightOwl.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/nightOwl", BuffID.NightOwl, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.NightOwlPotion"), Language.GetTextValue($"ItemTooltip.NightOwlPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/nightOwl", BuffID.NightOwl, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ObsidianSkin.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.ObsidianSkin.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/obsidianSkin", BuffID.ObsidianSkin, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.ObsidianSkinPotion"), Language.GetTextValue($"ItemTooltip.ObsidianSkinPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/obsidianSkin", BuffID.ObsidianSkin, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Rage.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Rage.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/rage", BuffID.Rage, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.RagePotion"), Language.GetTextValue($"ItemTooltip.RagePotion"), "ToastyQoL/Content/UI/PotionUI/Textures/rage", BuffID.Rage, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Regen.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Regen.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/regeneration", BuffID.Regeneration, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.RegenerationPotion"), Language.GetTextValue($"ItemTooltip.RegenerationPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/regeneration", BuffID.Regeneration, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Shine.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Shine.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/shine", BuffID.Shine, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.ShinePotion"), Language.GetTextValue($"ItemTooltip.ShinePotion"), "ToastyQoL/Content/UI/PotionUI/Textures/shine", BuffID.Shine, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Sonar.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Sonar.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/sonar", BuffID.Sonar, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.SonarPotion"), Language.GetTextValue($"ItemTooltip.SonarPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/sonar", BuffID.Sonar, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Spelunker.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Spelunker.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/spelunker", BuffID.Spelunker, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.SpelunkerPotion"), Language.GetTextValue($"ItemTooltip.SpelunkerPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/spelunker", BuffID.Spelunker, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Summoning.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Summoning.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/summoning", BuffID.Summoning, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.SummoningPotion"), Language.GetTextValue($"ItemTooltip.SummoningPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/summoning", BuffID.Summoning, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Swiftness.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Swiftness.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/swiftness", BuffID.Swiftness, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.SwiftnessPotion"), Language.GetTextValue($"ItemTooltip.SwiftnessPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/swiftness", BuffID.Swiftness, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Thorns.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Thorns.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/thorns", BuffID.Thorns, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.ThornsPotion"), Language.GetTextValue($"ItemTooltip.ThornsPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/thorns", BuffID.Thorns, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Tipsy.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Tipsy.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/ale", BuffID.Tipsy, () => true,
+                new PotionElement(Language.GetTextValue($"BuffName.Tipsy"), Language.GetTextValue($"BuffDescription.Tipsy"), "ToastyQoL/Content/UI/PotionUI/Textures/ale", BuffID.Tipsy, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Titan.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Titan.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/titan", BuffID.Titan, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.TitanPotion"), Language.GetTextValue($"ItemTooltip.TitanPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/titan", BuffID.Titan, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Warmth.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Warmth.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/warmth", BuffID.Warmth, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.WarmthPotion"), Language.GetTextValue($"ItemTooltip.WarmthPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/warmth", BuffID.Warmth, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.WaterWalking.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.WaterWalking.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/waterWalking", BuffID.WaterWalking, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.WaterWalkingPotion"), Language.GetTextValue($"ItemTooltip.WaterWalkingPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/waterWalking", BuffID.WaterWalking, () => true,
                 Weights.PreBoss),
 
-                new PotionElement(Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Wrath.Name"), Language.GetTextValue($"Mods.ToastyQoL.UI.Potions.Wrath.Description"), "ToastyQoL/Content/UI/PotionUI/Textures/wrath", BuffID.Wrath, () => true,
+                new PotionElement(Language.GetTextValue($"ItemName.WrathPotion"), Language.GetTextValue($"ItemTooltip.WrathPotion"), "ToastyQoL/Content/UI/PotionUI/Textures/wrath", BuffID.Wrath, () => true,
                 Weights.PreBoss)
             });
 
