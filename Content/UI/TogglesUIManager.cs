@@ -7,6 +7,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using ToastyQoL.Content.UI.SingleElements;
 using ToastyQoL.Content.UI.UIManagers;
@@ -219,10 +220,11 @@ namespace ToastyQoL.Content.UI
                 {
                     Main.blockMouse = Main.LocalPlayer.mouseInterface = true;
                     scale = 1.1f;
+                    string LocalizedDescription = Language.GetTextValue(currentElement.Description);
                     spriteBatch.Draw(OutlineTexture, drawPosition, null, Color.White * opacity, 0f, OutlineTexture.Size() * 0.5f, scale, SpriteEffects.None, 0f);
 
-                    Vector2 size = FontAssets.MouseText.Value.MeasureString(currentElement.Description);
-                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, currentElement.Description, ScreenCenter.X - size.X / 2, ScreenCenter.Y + 30f,
+                    Vector2 size = FontAssets.MouseText.Value.MeasureString(LocalizedDescription);
+                    Utils.DrawBorderStringFourWay(spriteBatch, FontAssets.MouseText.Value, LocalizedDescription, ScreenCenter.X - size.X / 2, ScreenCenter.Y + 30f,
                         Color.White, Color.Black, default);
 
                     // Handle clicking on the icon.

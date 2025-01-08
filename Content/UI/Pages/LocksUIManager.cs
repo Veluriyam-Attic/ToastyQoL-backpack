@@ -53,7 +53,7 @@ namespace ToastyQoL.Content.UI.UIManagers
                     () => { Toggles.ItemLock = !Toggles.ItemLock; },
                     typeof(Toggles).GetField("ItemLock", ToastyQoLUtils.UniversalBindingFlags)),
             };
-            TogglesPage uiManager = new(uIElements, LocksUIName, "Progression Locks" /*Language.GetTextValue($"Mods.ToastyQoL.UI.UIButtons.LocksUI")*/, ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/locksUIIcon", AssetRequestMode.ImmediateLoad).Value, 4f, true);
+            TogglesPage uiManager = new(uIElements, LocksUIName, "Mods.ToastyQoL.UI.UIButtons.LocksUI", ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/locksUIIcon", AssetRequestMode.ImmediateLoad).Value, 4f, true);
             uiManager.TryRegister();
         }
     }      
