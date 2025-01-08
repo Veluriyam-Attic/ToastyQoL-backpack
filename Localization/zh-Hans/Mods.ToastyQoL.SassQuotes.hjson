@@ -1,41 +1,41 @@
 Lose: {
-	// 1: Use your noggin...
-	// 2: This is going to be a looooong journey, isn't it?
-	// 3: I hope the youtube views are worth it.
-	// 4: Cheese belongs on crackers, not nohits.
-	// 5: Fallgodding might help.
-	// 6: Avoid projectiles, they hurt!
-	// 7: It's okay, you can always blame the RNG.
-	// 8: You know you need to kill the boss for it to be a nohit, right?
-	// 9: You literally died at the end. This isn't a nohit.
-	// 11: I think Hello Kitty Online might be more your speed?
-	// 12: The venn diagram of you and the boss' attacks is a perfect circle.
-	// 13: Hello? you awake? haven't turned on your brain yet, have you?
-	// 14: Unfortunately for you, difficulty is subjective.
-	// 15: When was the last time you went outside?
-	// 16: Skill issue detected. Solution: Touch Grass.
-	// 17: You're supposed to nohit the boss, not the other way around...
-	// 18: Were you trying to get hit?
+	1: Use your noggin...
+	2: This is going to be a looooong journey, isn't it?
+	3: I hope the youtube views are worth it.
+	4: Cheese belongs on crackers, not nohits.
+	5: Fallgodding might help.
+	6: Avoid projectiles, they hurt!
+	7: It's okay, you can always blame the RNG.
+	8: You know you need to kill the boss for it to be a nohit, right?
+	9: You literally died at the end. This isn't a nohit.
+	11: I think Hello Kitty Online might be more your speed?
+	12: The venn diagram of you and the boss' attacks is a perfect circle.
+	13: Hello? you awake? haven't turned on your brain yet, have you?
+	14: Unfortunately for you, difficulty is subjective.
+	15: When was the last time you went outside?
+	16: Skill issue detected. Solution: Touch Grass.
+	17: You're supposed to nohit the boss, not the other way around...
+	18: Were you trying to get hit?
 }
 
 Win: {
-	// 1: I hope you know your judge's favorite song.
-	// 2: You should see a Doctor. Frequent, premature kills can be a sign of a severe skill issue.
-	// 3: Is okiiiii i guess...
-	// 4: Come on you can do better than this... Maybe.
-	// 5: Hey, your ego is showing.
-	// 6: When was the last time you went outside?
-	// 7: Skill issue detected. Solution: Touch Grass.
-	// 8: Your mother must be so proud of you.
+	1: I hope you know your judge's favorite song.
+	2: You should see a Doctor. Frequent, premature kills can be a sign of a severe skill issue.
+	3: Is okiiiii i guess...
+	4: Come on you can do better than this... Maybe.
+	5: Hey, your ego is showing.
+	6: When was the last time you went outside?
+	7: Skill issue detected. Solution: Touch Grass.
+	8: Your mother must be so proud of you.
 }
 
 Specific: {
-	// KingSlime: Press 'A' and 'D' to move!
-	// KingSlimeAlt: A Guinea Pig did better than you...
-	// EyeGeneric: This Boss has better eyesight than you...
-	// Spacebar: Press 'Space' to jump!
-	// Plantera: Well done, you killed a plant.
-	// QueenBee: "'Hive' got a plan for you: Give up."
-	// Fishron: Don't fish for compliments.
-	// FishronAlt: Double tap to dash!
+	KingSlime: Press 'A' and 'D' to move!
+	KingSlimeAlt: A Guinea Pig did better than you...
+	EyeGeneric: This Boss has better eyesight than you...
+	Spacebar: Press 'Space' to jump!
+	Plantera: Well done, you killed a plant.
+	QueenBee: "'Hive' got a plan for you: Give up."
+	Fishron: Don't fish for compliments.
+	FishronAlt: Double tap to dash!
 }

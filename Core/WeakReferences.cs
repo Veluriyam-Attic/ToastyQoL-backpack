@@ -391,7 +391,7 @@ namespace ToastyQoL
             if (args[1].GetType() != typeof(string))
                 throw new ArgumentException("Argument 1 must be a string.");
 
-             SassModeSystem.GenericSassQuotesLose.Add((string)args[1]);
+             SassModeSystem.GenericSassQuotesLose.Add(new(args[1] as string));
         }
 
         private static void AddSassQuoteWin(object[] args)
@@ -402,7 +402,7 @@ namespace ToastyQoL
             if (args[1].GetType() != typeof(string))
                 throw new ArgumentException("Argument 1 must be a string.");
 
-            SassModeSystem.GenericSassQuotesWin.Add((string)args[1]);
+            SassModeSystem.GenericSassQuotesWin.Add(new(args[1] as string));
         }
 
         private static void AddBossSpecificSassQuote(object[] args)
@@ -416,9 +416,9 @@ namespace ToastyQoL
                 throw new ArgumentException("Argument 1 must be a List<string>.");
 
             if (SassModeSystem.SassSpecificBossQuotes.TryGetValue((int)args[1], out var value))
-                value.Add((string)args[2]);
+                value.Add(new(args[2] as string));
             else
-                SassModeSystem.SassSpecificBossQuotes.Add((int)args[1], (List<string>)args[2]);
+                SassModeSystem.SassSpecificBossQuotes.Add((int)args[1], (args[2] as List<string>).Select(key => new Helpers.LazyLocalization(key)).ToList());
         }
     }
 }
