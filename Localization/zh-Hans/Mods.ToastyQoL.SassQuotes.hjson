@@ -1,41 +1,41 @@
 Lose: {
-	1: Use your noggin...
-	2: This is going to be a looooong journey, isn't it?
-	3: I hope the youtube views are worth it.
-	4: Cheese belongs on crackers, not nohits.
-	5: Fallgodding might help.
-	6: Avoid projectiles, they hurt!
-	7: It's okay, you can always blame the RNG.
-	8: You know you need to kill the boss for it to be a nohit, right?
-	9: You literally died at the end. This isn't a nohit.
-	11: I think Hello Kitty Online might be more your speed?
-	12: The venn diagram of you and the boss' attacks is a perfect circle.
-	13: Hello? you awake? haven't turned on your brain yet, have you?
-	14: Unfortunately for you, difficulty is subjective.
-	15: When was the last time you went outside?
-	16: Skill issue detected. Solution: Touch Grass.
-	17: You're supposed to nohit the boss, not the other way around...
-	18: Were you trying to get hit?
+	1: 你可长点心吧……
+	2: 万里长征，已经走出了——一步！
+	3: 这种节目效果一定能带来很可观的播放量吧。
+	4: 知天易，无伤难。
+	5: 要不要试试全图飙车，无脑下落？
+	6: 你知道弹幕可以躲避吗？它们有伤害！
+	7: 没逝的，一定是抽奖Boss的锅。
+	8: 你知道这个游戏的玩法是你要活着，Boss要死掉吧？
+	9: 输了就是输了，不许耍赖。
+	10: 我觉得你的这个情况可能更适合去玩宝宝巴士。
+	11: 如果用这个圈表示Boss的攻击，那个圈表示你——哦，是同一个圈啊。
+	12: 醒醒，你打游戏的时候睡得真香。
+	13: 很不幸，对你来说，难度还真是主观的。
+	14: 你上次站起来活动一下是什么时候？
+	15: 检测到菜。解决方案：别凹了。
+	16: 是不是想让Boss无伤你？
+	17: 这是在躲，还是在接？
 }
 
 Win: {
-	1: I hope you know your judge's favorite song.
-	2: You should see a Doctor. Frequent, premature kills can be a sign of a severe skill issue.
-	3: Is okiiiii i guess...
-	4: Come on you can do better than this... Maybe.
-	5: Hey, your ego is showing.
-	6: When was the last time you went outside?
-	7: Skill issue detected. Solution: Touch Grass.
-	8: Your mother must be so proud of you.
+	1: 接下来压力来到后期配乐环节！
+	2: 你需要做个检查。失去对击杀时间的控制是菜的前期预兆。
+	3: 这算你过……了吧。
+	4: 你的水平可比这个强多了……嗯？你还能打得出来吧？
+	5: 还有什么比这让人更膨胀！
+	6: 你上次站起来活动一下是什么时候？
+	7: 检测到菜。解决方案：别凹了。
+	8: 大佬真是好棒棒啊。
 }
 
 Specific: {
-	KingSlime: Press 'A' and 'D' to move!
-	KingSlimeAlt: A Guinea Pig did better than you...
-	EyeGeneric: This Boss has better eyesight than you...
-	Spacebar: Press 'Space' to jump!
-	Plantera: Well done, you killed a plant.
-	QueenBee: "'Hive' got a plan for you: Give up."
-	Fishron: Don't fish for compliments.
-	FishronAlt: Double tap to dash!
+	KingSlime: 按“A”和“D”键来移动！
+	KingSlimeAlt: 绳子上栓条狗都能过……
+	EyeGeneric: Boss的眼神可比你好多了……
+	Spacebar: 按“空格”来跳跃！
+	Plantera: 跟一株植物斗智斗勇，看来你是吃素的！
+	QueenBee: 虫群可以接受你的投降。
+	Fishron: 直钩什么也钓不到的哦~
+	FishronAlt: 双击方向键来冲刺！
 }

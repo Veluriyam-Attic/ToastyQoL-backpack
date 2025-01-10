@@ -53,8 +53,8 @@ Toggles: {
 	}
 
 	Sass: {
-		Name: 羞辱模式
-		Description: 当你死亡时在聊天栏显示一条信息来羞辱你
+		Name: 嘲讽模式
+		Description: 当你死亡时在聊天栏显示一条信息来嘲讽你
 	}
 
 	DPS: {

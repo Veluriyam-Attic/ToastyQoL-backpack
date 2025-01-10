@@ -32,7 +32,7 @@ namespace ToastyQoL.Core.Systems
 
         public override void Load()
         {
-            for(int i = 1; i <= 18; ++i)
+            for(int i = 1; i <= 17; ++i)
             {
                 GenericSassQuotesLose.Add(new($"Mods.ToastyQoL.SassQuotes.Lose.{i}"));
             }
