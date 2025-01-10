@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using static ToastyQoL.Core.Systems.MNLSystems.MNLsHandler;
 
 namespace ToastyQoL.Core.Systems.MNLSystems
@@ -95,15 +96,15 @@ namespace ToastyQoL.Core.Systems.MNLSystems
                 float secondsTimer = FramesAlive / 60;
                 float timerUnder = secondsMNL - secondsTimer;
                 timerUnder = (float)Math.Truncate((double)timerUnder * 100f) / 100f;
-                ToastyQoLUtils.DisplayText($"[c/ff2f2f:You were under the kill time by ][c/fccccf:{timerUnder}] [c/ff2f2f:seconds!]");
+                ToastyQoLUtils.DisplayText($"[c/ff2f2f:" + Language.GetTextValue($"Mods.ToastyQoL.MNL.UnderKillTime", $"][c/fccccf:{timerUnder}][c/ff2f2f:") + "]");
             }
             // Over MNL Message
             else
-                ToastyQoLUtils.DisplayText($"[c/2fff2f:You were above the kill time!]");
+                ToastyQoLUtils.DisplayText($"[c/2fff2f:" + Language.GetTextValue($"Mods.ToastyQoL.MNL.AboveKillTime") + "]");
 
             // Display DPS message if required.
             if (Toggles.BossDPS && DPSDamage.Any())
-                ToastyQoLUtils.DisplayText($"[c/e7684b:Average DPS:] [c/fccccf:{(int)DPSDamage.Average()}]");
+                ToastyQoLUtils.DisplayText($"[c/e7684b:" + Language.GetTextValue($"Mods.ToastyQoL.MNL.AverageDPS", $"][c/fccccf:{(int)DPSDamage.Average()}]"));
 
             // Say any sass message if required.
             if (Toggles.SassMode)

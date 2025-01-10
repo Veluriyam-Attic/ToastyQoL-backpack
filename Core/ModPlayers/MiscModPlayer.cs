@@ -6,6 +6,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using ToastyQoL.Core.Systems.MNLSystems;
 
 namespace ToastyQoL.Core.ModPlayers
 {
@@ -128,6 +129,10 @@ namespace ToastyQoL.Core.ModPlayers
             }
         }
 
-        public override void OnRespawn() => Player.immuneTime = 60;
+        public override void OnRespawn()
+        {
+            Player.immuneTime = 60;
+            MNLsHandler.PlayerRespawnChecks();
+        }
     }
 }
