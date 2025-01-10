@@ -4,6 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using ToastyQoL.Helpers;
 
 namespace ToastyQoL.Core.Systems
 {
@@ -14,9 +15,7 @@ namespace ToastyQoL.Core.Systems
         {
             public Func<bool> PastTierCheck;
 
-            //public string BossName;
-            private readonly string _bossKey;
-            public string BossName { get { return Language.GetTextValue(_bossKey); } }
+            public LazyLocalization BossName;
 
             public List<int> AssosiatedItemTypes;
 
@@ -25,7 +24,7 @@ namespace ToastyQoL.Core.Systems
             public BossLockInformation(Func<bool> pastTierCheck, string bossKey, List<int> assosiatedItemTypes, float weight = 1f)
             {
                 PastTierCheck = pastTierCheck;
-                _bossKey = bossKey;
+                BossName = new(bossKey);
                 AssosiatedItemTypes = assosiatedItemTypes;
                 Weight = weight;
             }
