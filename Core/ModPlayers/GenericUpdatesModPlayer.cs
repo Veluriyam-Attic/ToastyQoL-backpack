@@ -3,6 +3,7 @@ using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.GameInput;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using ToastyQoL.Content.UI;
 using ToastyQoL.Content.UI.PotionUI;
@@ -51,7 +52,7 @@ namespace ToastyQoL.Core.ModPlayers
             if (Toggles.InstantDeath)
             {
                 if (Player.HasBuff(BuffID.BrainOfConfusionBuff))
-                    Player.KillMe(PlayerDeathReason.ByCustomReason(Player.name + "'s brain is not as big as they think"), 1000.0, 0, false);
+                    Player.KillMe(PlayerDeathReason.ByCustomReason(Language.GetTextValue($"Mods.ToastyQoL.DeathMessages.BrainOfConfusion", Player.name)), 1000.0, 0, false);
 
                 Player.buffImmune[BuffID.ShadowDodge] = true;
                 Player.onHitDodge = false;
