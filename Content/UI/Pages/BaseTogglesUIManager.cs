@@ -129,7 +129,7 @@ namespace ToastyQoL.Content.UI.UIManagers
             {
                 // If it contains the key, but not the value, then throw an error informing that a different name needs to be used.
                 if (!UIManagers.ContainsValue(this))
-                    throw new Exception("Name is already in use by another UIManager, please pick a different one.");
+                    throw new Exception("名称已被其他UI管理器使用，请选择其他名称. ");
 
                 return this;
             }

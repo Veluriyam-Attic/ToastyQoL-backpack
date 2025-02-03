@@ -86,7 +86,7 @@ namespace ToastyQoL.Content.UI.BossUI
                 typeof(NPC).GetField("downedAncientCultist", ToastyQoLUtils.UniversalBindingFlags), Weights.PostLunaticCultist).Register();
 
             new BossToggleElement("ToastyQoL/Content/UI/Textures/BossIcons/moonlord", Language.GetTextValue($"Enemies.MoonLord"),
-                typeof(NPC).GetField("downedMoonlord", ToastyQoLUtils.UniversalBindingFlags), Weights.PostMoonlord).Register();          
+                typeof(NPC).GetField("downedMoonlord", ToastyQoLUtils.UniversalBindingFlags), Weights.PostMoonlord).Register();
         }
 
         public static void AddBossElement(BossToggleElement element)
@@ -125,10 +125,10 @@ namespace ToastyQoL.Content.UI.BossUI
         {
             #region KillAllBosses
             // ALL THE TEXTURES
-            Texture2D crossTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Cross", (AssetRequestMode)2).Value;
-            Texture2D crossGlowTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/CrossGlow", (AssetRequestMode)2).Value;
-            Texture2D tickTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Tick", (AssetRequestMode)2).Value;
-            Texture2D tickGlowTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/TickGlow", (AssetRequestMode)2).Value;
+            Texture2D crossTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Tick", (AssetRequestMode)2).Value;
+            Texture2D crossGlowTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/TickGlow", (AssetRequestMode)2).Value;
+            Texture2D tickTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Cross", (AssetRequestMode)2).Value;
+            Texture2D tickGlowTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/CrossGlow", (AssetRequestMode)2).Value;
             Texture2D whiteGlowSmall = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/SmallerWhiteRect", (AssetRequestMode)2).Value;
             // Get the mouse hitbox
             Rectangle mouseHitbox = new(Main.mouseX, Main.mouseY, 2, 2);
@@ -252,7 +252,7 @@ namespace ToastyQoL.Content.UI.BossUI
 
             Vector2 scrollOffset = ScrollbarOffset;
             //if (-maxScrollDistance > 235f)
-                scrollOffset.Y = Utils.Remap(scrollOffset.Y, 8f, -maxScrollDistance, 8f, 235f);
+            scrollOffset.Y = Utils.Remap(scrollOffset.Y, 8f, -maxScrollDistance, 8f, 235f);
 
             spriteBatch.Draw(scrollbarTexture, spawnPos + scrollOffset, null, Color.White, 0, scrollbarTexture.Size() * 0.5f, 1f, 0, 0);
             #endregion
@@ -262,10 +262,10 @@ namespace ToastyQoL.Content.UI.BossUI
         {
             // Get all of the base textures.
             Texture2D deleteIconTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/thingForScrolling", (AssetRequestMode)2).Value;
-            Texture2D crossTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Cross", (AssetRequestMode)2).Value;
-            Texture2D crossGlowTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/CrossGlow", (AssetRequestMode)2).Value;
-            Texture2D tickTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Tick", (AssetRequestMode)2).Value;
-            Texture2D tickGlowTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/TickGlow", (AssetRequestMode)2).Value;
+            Texture2D crossTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Tick", (AssetRequestMode)2).Value;
+            Texture2D crossGlowTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/TickGlow", (AssetRequestMode)2).Value;
+            Texture2D tickTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/Cross", (AssetRequestMode)2).Value;
+            Texture2D tickGlowTexture = ModContent.Request<Texture2D>("ToastyQoL/Content/UI/Textures/Powers/CrossGlow", (AssetRequestMode)2).Value;
 
             // And the initial draw position.
             Vector2 drawPosition = spawnPos + new Vector2(-80, -90);
@@ -287,7 +287,7 @@ namespace ToastyQoL.Content.UI.BossUI
                 BossToggleElement element = BossElements[i];
 
                 // Only draw it if we are inside the bounds.
-                if (drawPositionFinal.Y !> killIfAbove.Y && drawPositionFinal.Y !< killIfBelow.Y)
+                if (drawPositionFinal.Y! > killIfAbove.Y && drawPositionFinal.Y! < killIfBelow.Y)
                 {
                     bool dead = element.GetStatus();
                     Texture2D tickOrCross = dead ? crossTexture : tickTexture;
